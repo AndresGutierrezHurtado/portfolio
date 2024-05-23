@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/img/Code-icon.png" type="image/x-icon">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
+    <title>Portafolio de Andrés Gutiérrez Hurtado - Desarrollador y Programador Web </title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+        $(document).ready(function () {
+            const BtnR  = $('.boton-derecha');
+            const BtnL = $('.boton-izquierda');
+            const scrolla = $('.cartas-scroll');
+            var navbar = $(".navbar-blur");
+
+            BtnR.on("click", function () {
+                scrolla.animate({
+                    scrollLeft: "-=250"
+                }, "slow");
+            });
+            
+            BtnL.on("click", function () {
+                scrolla.animate({
+                    scrollLeft: "+=250"
+                }, "slow");
+            });
+
+            function checkScroll() {
+                if ($(window).scrollTop() > 10) {
+                    navbar.addClass("bg-slate-800/[.12]");
+                } else {
+                    navbar.removeClass("bg-slate-800/[.12]");
+                }
+            }
+
+            function updateActiveLink() {
+                var scrollPosition = $(window).scrollTop();
+
+                $('section').each(function () {
+                    var target = $(this);
+                    var offsetTop = target.offset().top;
+                    var offsetBottom = offsetTop + target.outerHeight();
+
+                    if (scrollPosition+150 >= offsetTop && scrollPosition < offsetBottom) {
+                        $('.navbar-blur li a').removeClass('text-sky-600');
+                        $('.navbar-blur li a[href="#' + target.attr('id') + '"]').addClass('text-sky-600');
+                    }
+                });
+            }
+
+            checkScroll();    
+            $(window).scroll(checkScroll);
+
+            $(window).on('scroll', updateActiveLink);
+            updateActiveLink();
+      });
+    </script>
+  </body>
+</html>
