@@ -1,45 +1,43 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+<meta charset="UTF-8" />
     <link rel="shortcut icon" href="/img/Code-icon.png" type="image/x-icon">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
     <title>Portafolio de Andrés Gutiérrez Hurtado - Desarrollador y Programador Web </title>
-  </head>
-  <body>
+</head>
+<body>
     <div id="root"></div>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="module" src="/src/main.jsx"></script>
     <script>
         $(document).ready(function () {
-            const BtnR  = $('.boton-derecha');
-            const BtnL = $('.boton-izquierda');
-            const scrolla = $('.cartas-scroll');
-            var navbar = $(".navbar-blur");
+            const navbar = $(".navbar-blur");
+            const scrollContainer = $('#scrollContainer');
+            const scrollRightBtn = $('#scrollRight');
+            const scrollLeftBtn = $('#scrollLeft');
 
-            BtnR.on("click", function () {
-                scrolla.animate({
-                    scrollLeft: "-=250"
-                }, "slow");
-            });
-            
-            BtnL.on("click", function () {
-                scrolla.animate({
-                    scrollLeft: "+=250"
-                }, "slow");
+            // Scroll hacia la derecha
+            scrollRightBtn.click(function() {
+            scrollContainer.animate({scrollLeft: '+=150'}, 'slow');
             });
 
+            // Scroll hacia la izquierda
+            scrollLeftBtn.click(function() {
+            scrollContainer.animate({scrollLeft: '-=150'}, 'slow');
+            });
+
+            // función para actualizar el link activo y activar el blur del navbar
             function checkScroll() {
-                if ($(window).scrollTop() > 10) {
+                var scrollPosition = $(window).scrollTop();
+
+                if (scrollPosition > 10) {
                     navbar.addClass("bg-slate-800/[.12]");
                 } else {
                     navbar.removeClass("bg-slate-800/[.12]");
                 }
-            }
-
-            function updateActiveLink() {
-                var scrollPosition = $(window).scrollTop();
 
                 $('section').each(function () {
                     var target = $(this);
@@ -53,12 +51,9 @@
                 });
             }
 
-            checkScroll();    
-            $(window).scroll(checkScroll);
-
-            $(window).on('scroll', updateActiveLink);
-            updateActiveLink();
-      });
+            $(window).on('scroll', checkScroll);
+            checkScroll();
+        });
     </script>
-  </body>
+</body>
 </html>

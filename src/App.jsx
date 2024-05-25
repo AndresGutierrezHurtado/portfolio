@@ -59,16 +59,16 @@ function App() {
             Estos certificados son testimonio de mi compromiso con el crecimiento personal y la mejora continua:</p>
           </div>
           <div className="relative my-5 flex justify-center items-center">          
-            <button className="boton-izquierda absolute top-20 right-[-10px] md:right-[-20px] lg:right-[-60px] bg-gray-200 p-3 px-4 rounded-full border-black"><i className="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
-            <button className="boton-derecha absolute top-20 left-[-10px] md:left-[-20px] lg:left-[-60px] bg-gray-200 p-3 px-4 rounded-full border-black"><i className="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
-            <div className="w-2/3 md:w-10/12 lg:w-full cartas-scroll overflow-hidden flex gap-5">
+            <button id="scrollRight" className="absolute top-20 right-[-12px] md:right-[-20px] lg:right-[-60px] bg-gray-200 p-3 px-4 rounded-full border-black"><i className="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            <button id="scrollLeft" className="absolute top-20 left-[-12px] md:left-[-20px] lg:left-[-60px] bg-gray-200 p-3 px-4 rounded-full border-black"><i className="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+            <div id="scrollContainer" className="min-w-[230px] w-2/3 md:w-10/12 lg:w-full cartas-scroll flex gap-5 overflow-x-scroll touch-auto snap-x snap-mandatory scroll-smooth scroll-pl-[5px] md:scroll-pl-[15px]">
               <Certificados nombre="Lenguaje de programación Python" institucion="Universidad Distrital" url="/certificados/python-u.pdf" />
               <Certificados nombre="Programación con JavaScript" institucion="Movistar" url="/certificados/Programacion-JS.pdf" />
               <Certificados nombre="Fundamentos de programación" institucion="Movistar" url="/certificados/Fundamentos-programación.pdf" />
               <Certificados nombre="Construcción de Bases de datos con MYSQL" institucion="SENA" url="/certificados/CBDMYSQL.pdf" />
               <Certificados nombre="Desarrollo Web con PHP" institucion="SENA" url="/certificados/Desarrollo-php.pdf" />
               <Certificados nombre="Variables y estructuras de control en Python" institucion="SENA" url="/certificados/VyE-PYTHON.pdf" />
-              <Certificados nombre="Variables y estructuras de control en Java" institucion="SENA" url="/certificados/VyE-Java.pdf" />              
+              <Certificados nombre="Variables y estructuras de control en Java" institucion="SENA" url="/certificados/VyE-Java.pdf" />
             </div>
           </div>
         </section>
@@ -89,7 +89,7 @@ function App() {
             </article>
         </section>
         <footer className="w-full mt-16 mx-auto container lg:max-w-4xl md:max-w-2xl"> 
-          <div className="flex flex-col md:flex-row justify-between border border-slate-300 rounded-full bg-gray-200 py-1 px-5 shadow-lg mb-14">
+          <div className="flex flex-col md:flex-row justify-between py-1 px-5 rounded-full bg-zinc-100 text-zinc-600 font-semibold mb-14 shadow-lg">
             <p className="w-full md:w-auto mb-2 md:mb-0">© 2024 Andrés Gutiérrez.</p>
             <ul className="w-full md:w-auto flex gap-5">
               <li><a href="#sobre-mi" className="hover:underline">Sobre mí</a></li>
