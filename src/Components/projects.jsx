@@ -9,7 +9,7 @@ export default function Projects() {
             description:
                 "Express Sale es un sistema de información para la venta y distribución de productos de primera necesidad.",
             href: "/",
-            github: "",
+            github: "https://github.com/AndresGutierrezHurtado/express-sale",
             btn: "Sitio Web",
         },
         {
@@ -19,7 +19,7 @@ export default function Projects() {
             description:
                 "La abejita 22 es un sistema de información para la venta de uniformes escolares.",
             href: "/",
-            github: "",
+            github: "https://github.com/AndresGutierrezHurtado/la-abejita-22",
             btn: "Sitio Web",
         },
         {
@@ -29,7 +29,7 @@ export default function Projects() {
             description:
                 "AC Computers es un catálogo de componentes para computadores.",
             href: "https://ac-computers.onrender.com/",
-            github: "",
+            github: "https://github.com/AndresGutierrezHurtado/ac-computers",
             btn: "Sitio Web",
         },
         {
@@ -39,14 +39,14 @@ export default function Projects() {
             description:
                 "Pet's hoddies es un sistema de información para la venta de ropa y accesorios para mascotas.",
             href: "/",
-            github: "",
+            github: "https://github.com/AndresGutierrezHurtado/pets-hoddies",
             btn: "Sitio Web",
         },
     ];
 
     return (
         <section
-            id="section-Project"
+            id="section-proyectos"
             className="w-full max-w-[900px] mx-auto space-y-10"
         >
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-800">
@@ -63,6 +63,7 @@ export default function Projects() {
                         lenguages={project.lenguages}
                         description={project.description}
                         href={project.href}
+                        github={project.github}
                         btn={project.btn}
                     />
                 ))}

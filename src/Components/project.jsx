@@ -97,9 +97,9 @@ export default function Project(props) {
     };
 
     return (
-        <article className="flex flex-col md:flex-row gap-6 group max-w-full">
+        <article className="flex flex-col md:flex-row gap-6 group w-full max-w-[5] md:max-w-none">
             <div className="w-full md:w-1/2">
-                <div className="flex items-center transition duration-500 ease-in-out shadow-lg overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1.5 max-w-[450px] mx-auto">
+                <div className="flex items-center transition duration-500 ease-in-out shadow-lg overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1.5 max-w-[450px]">
                     <img
                         src={props.src}
                         alt="Imagen-proyecto"
@@ -113,14 +113,24 @@ export default function Project(props) {
                     {languagesList(props)}
                 </div>
                 <p className="text-balance"> {props.description} </p>
-                <a
-                    href={props.href}
-                    target="_blank"
-                    className="bg-gray-50 hover:bg-gray-100 duration-300 py-1 px-4 rounded-full border border-gray-300	text-gray-800 w-fit"
-                >
-                    <i className="fa-solid fa-link"></i> 
-                    Sitio web
-                </a>
+                <div class="flex flex-col md:flex-row gap-2">
+                    <a
+                        href={props.href}
+                        target="_blank"
+                        className="bg-gray-50 hover:bg-gray-100 duration-300 py-1 px-4 rounded-full border border-gray-300	text-gray-800 w-fit"
+                    >
+                        <i className="fa-solid fa-link mr-2"></i>
+                        Sitio web
+                    </a>
+                    <a
+                        href={props.github}
+                        target="_blank"
+                        className="bg-gray-50 hover:bg-gray-100 duration-300 py-1 px-4 rounded-full border border-gray-300	text-gray-800 w-fit"
+                    >
+                        <i className="fab fa-github mr-2"></i>
+                        Código
+                    </a>
+                </div>
             </div>
         </article>
     );

@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <footer className="w-full mt-16 mx-auto container lg:max-w-4xl md:max-w-2xl">
-            <div className="flex flex-col md:flex-row justify-between py-1 px-5 rounded-full bg-zinc-100 text-zinc-600 font-semibold mb-14 shadow-lg">
+        <footer className="w-full max-w-[900px] mx-auto my-10">
+            <div className="flex flex-col md:flex-row justify-between py-1 px-5 rounded-full bg-zinc-100 text-zinc-600 font-semibold shadow-lg">
                 <p className="w-full md:w-auto mb-2 md:mb-0">
                     © 2024 Andrés Gutiérrez.
                 </p>

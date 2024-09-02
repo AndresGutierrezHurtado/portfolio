@@ -20,7 +20,7 @@ export default function About() {
                         Mi objetivo es desarrollar aplicativos web de la <strong className="text-sky-600">mayor calidad</strong>, y <strong className="text-sky-600">mejorar todo lo posible en este campo.</strong>
                     </p>
                 </div>
-                <div className="w-full md:w-1/3 aspect-square rotate-6 rounded-md shadow-xl overflow-hidden">
+                <div className="w-full md:w-1/3 max-w-[400px] mx-auto aspect-square rotate-6 rounded-md shadow-xl overflow-hidden">
                     <img
                         src="/img/Foto-2.jpg"
                         alt="Foto-secundaria"

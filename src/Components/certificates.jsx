@@ -57,9 +57,10 @@ export default function Certificates() {
                 </p>
             </div>
             <div className="relative my-5 flex justify-center items-center">
+                {/* Scroll Buttons */}
                 <button
                     id="scrollRight"
-                    className="absolute top-20 right-[-12px] md:right-[-20px] lg:right-[-60px] bg-gray-200 p-3 px-4 rounded-full border-black"
+                    className="absolute top-1/2 -translate-y-1/2 right-[10px] bg-gray-200 bg-opacity-70 backdrop-blur rounded-full aspect-square w-[50px] border flex justify-center items-center"
                 >
                     <i
                         className="fa-solid fa-arrow-right"
@@ -68,16 +69,18 @@ export default function Certificates() {
                 </button>
                 <button
                     id="scrollLeft"
-                    className="absolute top-20 left-[-12px] md:left-[-20px] lg:left-[-60px] bg-gray-200 p-3 px-4 rounded-full border-black"
+                    className="absolute top-1/2 -translate-y-1/2 left-[10px] bg-gray-200 bg-opacity-70 backdrop-blur rounded-full aspect-square w-[50px] border flex justify-center items-center"
                 >
                     <i
                         className="fa-solid fa-arrow-left"
                         aria-hidden="true"
                     ></i>
                 </button>
+
+                {/* Container */}
                 <div
                     id="scrollContainer"
-                    className="min-w-[230px] w-2/3 md:w-10/12 lg:w-full cartas-scroll flex gap-5 overflow-x-scroll touch-auto snap-x snap-mandatory scroll-smooth scroll-pl-[5px] md:scroll-pl-[15px]"
+                    className="w-full cartas-scroll flex gap-5 overflow-x-scroll touch-auto snap-x snap-mandatory scroll-smooth scroll-pl-[5px] md:scroll-pl-[15px]"
                 >
                     {certificates.map((certificate, index) => (
                         <Certificate

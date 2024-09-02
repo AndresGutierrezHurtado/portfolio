@@ -2,14 +2,19 @@ export default function Hero() {
     return (
         <section
             id="section-inicio"
-            className="w-full max-w-[900px] mx-auto"
+            className="w-full max-w-[900px] mx-auto space-y-6"
         >
-            <div className="flex gap-6 items-center mb-4">
-                <img
-                    src="/img/Foto-perfil.jpg"
-                    alt="Foto-principal"
-                    className="rounded-full shadow-lg size-[65px]"
-                />
+
+            {/*  Photo and Badge container */}
+            <div className="flex gap-6 items-center">
+                <div className="size-[65px] rounded-full shadow-lg overflow-hidden">
+                    <img
+                        src="/img/Foto-perfil.jpg"
+                        alt="Foto-principal"
+                        className="object-cover w-full h-full"
+                    />
+                </div>
+
                 <a
                     href="https://www.linkedin.com/in/andres-gutiérrez-hurtado-25946728b/"
                     target="_blank"
@@ -25,23 +30,20 @@ export default function Hero() {
                 </a>
             </div>
 
-            <h1 className="text-4xl	font-bold tracking-tight text-gray-800 sm:text-5xl mb-4">
-                Hey, Soy Andrés Gutiérrez
-            </h1>
-            <p className="mt-6 text-xl text-gray-800 text-balance">
-                <span className="text-sky-600 font-bold">
-                    
-                    Técnico en Programación de Software
-                </span>
-                con formación académica certificada en diversas tecnologías, con
-                <span className="text-sky-600 font-bold">
-                    
-                    dominio del idioma inglés nivel B1
-                </span>
-                y en formación como Tecnólogo en Análisis y Desarrollo de
-                Software.
-            </p>
-            <div className="flex gap-6 flex-col sm:flex-row mt-8 text-center sm:text-start">
+            {/* Hero text */}
+            <div className="space-y-4">
+                <h1 className="text-4xl sm:text-5xl	font-bold tracking-tight text-gray-800">
+                    Hey, Soy Andrés Gutiérrez
+                </h1>
+                <p className="mt-6 text-xl text-gray-800 text-balance">
+                    <span className="text-sky-600 font-bold">Técnico en Programación de Software</span> con formación académica certificada en diversas tecnologías,
+                    con <span className="text-sky-600 font-bold">dominio del idioma inglés nivel B1</span> y en formación como Tecnólogo en Análisis y Desarrollo de
+                    Software.
+                </p>
+            </div>
+
+            {/* Links buttons */}
+            <div className="flex gap-6 flex-col sm:flex-row text-center sm:text-start">
                 <a
                     href="mailto:andres52885241@gmail.com"
                     target="_blank"
