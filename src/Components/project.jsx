@@ -113,21 +113,23 @@ export default function Project(props) {
                     {languagesList(props)}
                 </div>
                 <p className="text-balance"> {props.description} </p>
-                <div class="flex flex-col md:flex-row gap-2">
+                <div className="flex flex-col md:flex-row gap-2">
                     <a
                         href={props.href}
                         target="_blank"
-                        className="bg-gray-50 hover:bg-gray-100 duration-300 py-1 px-4 rounded-full border border-gray-300	text-gray-800 w-fit"
+                        className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-4 tooltip tooltip-info items-center flex"
+                        data-tip="Ver el sitio web"
                     >
-                        <i className="fa-solid fa-link mr-2"></i>
+                        <i className="fa-solid fa-link"></i>
                         Sitio web
                     </a>
                     <a
                         href={props.github}
                         target="_blank"
-                        className="bg-gray-50 hover:bg-gray-100 duration-300 py-1 px-4 rounded-full border border-gray-300	text-gray-800 w-fit"
+                        className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-4 tooltip tooltip-info items-center flex"
+                        data-tip="Ver el código de github"
                     >
-                        <i className="fab fa-github mr-2"></i>
+                        <i className="fab fa-github"></i>
                         Código
                     </a>
                 </div>

@@ -60,20 +60,18 @@ export default function Certificates() {
                 {/* Scroll Buttons */}
                 <button
                     id="scrollRight"
-                    className="absolute top-1/2 -translate-y-1/2 right-[10px] bg-gray-200 bg-opacity-70 backdrop-blur rounded-full aspect-square w-[50px] border flex justify-center items-center"
+                    className="absolute top-1/2 -translate-y-1/2 right-[10px] bg-gray-200 bg-opacity-70 backdrop-blur rounded-full aspect-square w-[50px] border flex justify-center items-center z-10"
                 >
                     <i
                         className="fa-solid fa-arrow-right"
-                        aria-hidden="true"
                     ></i>
                 </button>
                 <button
                     id="scrollLeft"
-                    className="absolute top-1/2 -translate-y-1/2 left-[10px] bg-gray-200 bg-opacity-70 backdrop-blur rounded-full aspect-square w-[50px] border flex justify-center items-center"
+                    className="absolute top-1/2 -translate-y-1/2 left-[10px] bg-gray-200 bg-opacity-70 backdrop-blur rounded-full aspect-square w-[50px] border flex justify-center items-center z-10"
                 >
                     <i
                         className="fa-solid fa-arrow-left"
-                        aria-hidden="true"
                     ></i>
                 </button>
 

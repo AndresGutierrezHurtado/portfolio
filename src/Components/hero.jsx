@@ -7,12 +7,10 @@ export default function Hero() {
 
             {/*  Photo and Badge container */}
             <div className="flex gap-6 items-center">
-                <div className="size-[65px] rounded-full shadow-lg overflow-hidden">
-                    <img
-                        src="/img/Foto-perfil.jpg"
-                        alt="Foto-principal"
-                        className="object-cover w-full h-full"
-                    />
+                <div className="avatar">
+                    <div className="w-[65px] rounded-full shadow-lg">
+                        <img src="/img/Foto-perfil.jpg" alt="Foto principal"/>
+                    </div>
                 </div>
 
                 <a
@@ -47,28 +45,32 @@ export default function Hero() {
                 <a
                     href="mailto:andres52885241@gmail.com"
                     target="_blank"
-                    className="bg-gray-50 hover:bg-gray-100 duration-300 py-1 px-4 rounded-full border border-gray-300	text-gray-800"
+                    className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-5 tooltip tooltip-info flex"
+                    data-tip="Envíame un correo"
                 >
                     <i className="fa-regular fa-envelope pr-1"></i> Contáctame
                 </a>
                 <a
                     href="https://www.linkedin.com/in/andres-gutiérrez-hurtado-25946728b/"
                     target="_blank"
-                    className="bg-gray-50 hover:bg-gray-100 duration-300 py-1 px-4 rounded-full border border-gray-300	text-gray-800"
+                    className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-5 tooltip tooltip-info flex"
+                    data-tip="Mira mi perfil de Linkedin"
                 >
                     <i className="fa-brands fa-linkedin pr-1"></i> Linkedin
                 </a>
                 <a
                     href="https://github.com/AndresGutierrezHurtado"
                     target="_blank"
-                    className="bg-gray-50 hover:bg-gray-100 duration-300 py-1 px-4 rounded-full border border-gray-300	text-gray-800"
+                    className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-5 tooltip tooltip-info flex"
+                    data-tip="Mira mi perfil de GitHub"
                 >
                     <i className="fa-brands fa-github pr-1"></i> GitHub
                 </a>
                 <a
                     href="/documentos/CV-Andres-Gutierrez.pdf"
                     target="_blank"
-                    className="bg-gray-50 hover:bg-gray-100 duration-300 py-1 px-4 rounded-full border border-gray-300	text-gray-800"
+                    className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-5 tooltip tooltip-info flex"
+                    data-tip="Mira mi hoja de vida"
                 >
                     <i className="fa-regular fa-circle-down pr-1"></i> Descarga
                     mi CV

@@ -8,7 +8,7 @@ export default function Certificate(props) {
             <a
                 href={props.url}
                 target="_blank"
-                className="flex justify-center items-center border py-2 px-4 rounded-lg gap-2 hover:bg-gray-100 duration-300"
+                    className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm py-3 h-auto px-5"
             >
                 <i className="fa-regular fa-file-pdf"></i> Documento
             </a>
