@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es" data-theme="claro">
+<head>
+<meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/img/Code-icon.png" type="image/x-icon">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/eb36e646d1.js" crossorigin="anonymous"></script>
+    <title>Portafolio de Andrés Gutiérrez Hurtado - Desarrollador y Programador Web </title>
+  <script type="module" crossorigin src="/assets/index-Bon75cn3.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DXCjnb3I.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const navbar = $(".navbar-blur");
+            const scrollContainer = $('#scrollContainer');
+            const scrollRightBtn = $('#scrollRight');
+            const scrollLeftBtn = $('#scrollLeft');
+
+            // Scroll hacia la derecha
+            scrollRightBtn.click(function() {
+            scrollContainer.animate({scrollLeft: '+=150'}, 'slow');
+            });
+
+            // Scroll hacia la izquierda
+            scrollLeftBtn.click(function() {
+            scrollContainer.animate({scrollLeft: '-=150'}, 'slow');
+            });
+
+            // función para actualizar el link activo y activar el blur del navbar
+            function checkScroll() {
+                var scrollPosition = $(window).scrollTop();
+
+                if (scrollPosition > 10) {
+                    navbar.addClass("bg-slate-800/[.12]");
+                } else {
+                    navbar.removeClass("bg-slate-800/[.12]");
+                }
+
+                $('section').each(function () {
+                    var target = $(this);
+                    var offsetTop = target.offset().top;
+                    var offsetBottom = offsetTop + target.outerHeight();
+
+                    if (scrollPosition+150 >= offsetTop && scrollPosition < offsetBottom) {
+                        $('.navbar-blur li a').removeClass('text-sky-600');
+                        $('.navbar-blur li a[href="#' + target.attr('id') + '"]').addClass('text-sky-600');
+                    }
+                });
+            }
+
+            $(window).on('scroll', checkScroll);
+            checkScroll();
+        });
+    </script>
+</body>
+</html>
