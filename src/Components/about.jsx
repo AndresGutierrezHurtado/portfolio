@@ -11,13 +11,13 @@ export default function About() {
             <article className="flex flex-col md:flex-row gap-20 md:gap-10">
                 <div className="w-full md:w-2/3 flex flex-col gap-4 text-lg">
                     <p>
-                        Mi nombre es Andrés Gutiérrez Hurtado, empecé en programación cuando conocí de este ámbito en el colegio hace 3 años. Actualmente <strong className="text-sky-600">estoy estudiando en el programa ADSO del SENA</strong>.
+                        Mi nombre es Andrés Gutiérrez Hurtado, empecé en programación cuando conocí de este ámbito en el colegio hace 3 años. Actualmente <strong className="text-lg text-sky-600">estoy estudiando en el programa ADSO del SENA</strong>.
                     </p>
                     <p>
-                        Uno de mis mayores logros en este campo, <strong className="text-sky-600">es haber liderado el mejor proyecto de mi colegio</strong>. Ese proyecto es ahora el sitio web oficial de la empresa, y me ayudó mucho a aprender sobre desarrollo web.
+                        Uno de mis mayores logros en este campo, <strong className="text-lg text-sky-600">es haber liderado el mejor proyecto de mi colegio</strong>. Ese proyecto es ahora el sitio web oficial de la empresa, y me ayudó mucho a aprender sobre desarrollo web.
                     </p>
                     <p>
-                        Mi objetivo es desarrollar aplicativos web de la <strong className="text-sky-600">mayor calidad</strong>, y <strong className="text-sky-600">mejorar todo lo posible en este campo.</strong>
+                        Mi objetivo es desarrollar aplicativos web de la <strong className="text-lg text-sky-600">mayor calidad</strong>, y <strong className="text-lg text-sky-600">mejorar todo lo posible en este campo.</strong>
                     </p>
                 </div>
                 <div className="w-full md:w-1/3 max-w-[400px] mx-auto aspect-square rotate-6 rounded-md shadow-xl overflow-hidden">

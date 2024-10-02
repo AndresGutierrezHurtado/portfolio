@@ -34,8 +34,8 @@ export default function Hero() {
                     Hey, Soy Andrés Gutiérrez
                 </h1>
                 <p className="mt-6 text-xl text-gray-800 text-balance">
-                    <span className="text-sky-600 font-bold">Técnico en Programación de Software</span> con formación académica certificada en diversas tecnologías,
-                    con <span className="text-sky-600 font-bold">dominio del idioma inglés nivel B1</span> y en formación como Tecnólogo en Análisis y Desarrollo de
+                    <span className="text-xl text-sky-600 font-bold">Técnico en Programación de Software</span> con formación académica certificada en diversas tecnologías,
+                    con <span className="text-xl text-sky-600 font-bold">dominio del idioma inglés nivel B1</span> y en formación como Tecnólogo en Análisis y Desarrollo de
                     Software.
                 </p>
             </div>
