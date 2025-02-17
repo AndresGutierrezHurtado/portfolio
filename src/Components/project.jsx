@@ -1,6 +1,5 @@
-export default function Project(props) {
-    const languagesList = (props) => {
-        const lenguages = props.lenguages;
+export default function Project({ title, src, lenguages, description, href, github, btn }) {
+    const languagesList = (lenguages) => {
         const iconMap = {
             PHP: {
                 icon: "fab fa-php",
@@ -101,32 +100,35 @@ export default function Project(props) {
             <div className="w-full md:w-1/2">
                 <div className="flex items-center transition duration-500 ease-in-out shadow-lg overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1.5 max-w-[450px]">
                     <img
-                        src={props.src}
+                        src={src}
                         alt="Imagen-proyecto"
                         className="w-full h-auto transition duration-500 sm:max-h-full sm:h-56 md:scale-110 md:group-hover:scale-100"
                     />
                 </div>
             </div>
             <div className="w-full md:w-1/2 flex flex-col gap-3">
-                <h3 className="font-bold text-2xl capitalize">{props.title}</h3>
-                <div className="flex flex-wrap gap-2 mb-2">
-                    {languagesList(props)}
-                </div>
-                <p className="text-balance"> {props.description} </p>
+                <h3 className="font-bold text-2xl capitalize">{title}</h3>
+                <div className="flex flex-wrap gap-2 mb-2">{languagesList(lenguages)}</div>
+                <p className="text-balance"> {description} </p>
                 <div className="flex flex-col md:flex-row gap-2">
                     <a
-                        href={props.href}
+                        href={href}
                         target="_blank"
-                        className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-4 tooltip tooltip-info items-center flex"
-                        data-tip="Ver el sitio web"
+                        className="tooltip tooltip-info before:font-semibold"
+                        data-tip={href ? "Ver sitio web" : "No se ha publicado"}
                     >
-                        <i className="fa-solid fa-link"></i>
-                        Sitio web
+                        <button
+                            className="btn btn-sm rounded-full bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-4 items-center flex disabled:cursor-not-allowed"
+                            disabled={!href}
+                        >
+                            <i className="fa-solid fa-link"></i>
+                            Sitio web
+                        </button>
                     </a>
                     <a
-                        href={props.github}
+                        href={github}
                         target="_blank"
-                        className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-4 tooltip tooltip-info items-center flex"
+                        className="btn btn-sm rounded-full bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-4 items-center flex disabled:cursor-not-allowed tooltip tooltip-info before:font-semibold"
                         data-tip="Ver el código de github"
                     >
                         <i className="fab fa-github"></i>

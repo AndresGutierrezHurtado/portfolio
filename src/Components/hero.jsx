@@ -14,7 +14,7 @@ export default function Hero() {
                 </div>
 
                 <a
-                    href="https://www.linkedin.com/in/andres-gutiérrez-hurtado-25946728b/"
+                    href="https://www.linkedin.com/in/andrés-gutiérrez-hurtado-25946728b/"
                     target="_blank"
                 >
                     <div className="flex items-center">
@@ -51,7 +51,7 @@ export default function Hero() {
                     <i className="fa-regular fa-envelope pr-1"></i> Contáctame
                 </a>
                 <a
-                    href="https://www.linkedin.com/in/andres-gutiérrez-hurtado-25946728b/"
+                    href="https://www.linkedin.com/in/andrés-gutiérrez-hurtado-25946728b/"
                     target="_blank"
                     className="btn border border-gray-300 bg-gray-50 hover:bg-gray-200 text-gray-600 btn-sm rounded-full px-5 tooltip tooltip-info flex"
                     data-tip="Mira mi perfil de Linkedin"

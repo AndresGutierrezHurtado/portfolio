@@ -8,8 +8,8 @@ export default function Projects() {
             lenguages: ["PHP", "Tailwind", "JavaScript"],
             description:
                 "Express Sale es un sistema de información para la venta y distribución de productos de primera necesidad.",
-            href: "/",
-            github: "https://github.com/AndresGutierrezHurtado/express-sale",
+            href: null,
+            github: "https://github.com/AndresGutierrezHurtado/express-sale-react",
             btn: "Sitio Web",
         },
         {
@@ -18,7 +18,7 @@ export default function Projects() {
             lenguages: ["Laravel", "Tailwind", "JavaScript"],
             description:
                 "La abejita 22 es un sistema de información para la venta de uniformes escolares.",
-            href: "/",
+            href: null,
             github: "https://github.com/AndresGutierrezHurtado/la-abejita-22",
             btn: "Sitio Web",
         },
@@ -28,8 +28,8 @@ export default function Projects() {
             lenguages: ["Node", "Tailwind", "Express"],
             description:
                 "AC Computers es un catálogo de componentes para computadores.",
-            href: "https://ac-computers.onrender.com/",
-            github: "https://github.com/AndresGutierrezHurtado/ac-computers",
+            href: "https://ac-computers-api.onrender.com/",
+            github: "https://github.com/AndresGutierrezHurtado/ac-computers-react",
             btn: "Sitio Web",
         },
         {
@@ -38,7 +38,7 @@ export default function Projects() {
             lenguages: ["React", "Tailwind", "Express", "Node"],
             description:
                 "Pet's hoddies es un sistema de información para la venta de ropa y accesorios para mascotas.",
-            href: "/",
+            href: null,
             github: "https://github.com/AndresGutierrezHurtado/pets-hoddies",
             btn: "Sitio Web",
         },
@@ -58,13 +58,7 @@ export default function Projects() {
                 {projects.map((project, index) => (
                     <Project
                         key={index}
-                        title={project.title}
-                        src={project.src}
-                        lenguages={project.lenguages}
-                        description={project.description}
-                        href={project.href}
-                        github={project.github}
-                        btn={project.btn}
+                        {...project}
                     />
                 ))}
             </div>
