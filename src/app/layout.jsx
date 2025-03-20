@@ -1,5 +1,7 @@
 import { Passion_One, Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/layout/header";
+import Footer from "@/layout/footer";
 
 const passionOne = Passion_One({
     variable: "--font-passion-one",
@@ -10,7 +12,6 @@ const passionOne = Passion_One({
 const inter = Inter({
     variable: "--font-inter",
     subsets: ["latin"],
-    weight: ["400", "700"], 
 });
 
 export const metadata = {
@@ -21,8 +22,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={`${passionOne.variable} ${inter.variable} antialiased`}>
-                {children}
+            <body className={`${passionOne.variable} ${inter.variable} antialiased flex flex-col min-h-screen`}>
+                <Header />
+                <main className="flex-1">{children}</main>
+                <Footer />
             </body>
         </html>
     );

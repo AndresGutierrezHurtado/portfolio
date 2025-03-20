@@ -3,6 +3,11 @@
     themes: light --default;
 }
 
+@theme inline {
+    --font-passion-one: var(--font-passion-one);
+    --font-inter: var(--font-inter);
+}
+
 :root {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -12,11 +17,12 @@
     --color-base-content: #1F2937;
     --color-primary: #0284C7;
     --color-primary-content: #F6F6FF;
+    --color-secondary: #1F2937;
+    --color-secondary-content: #F6F6FF;
 }
 
-@theme inline {
-    --font-passion-one: var(--font-passion-one);
-    --font-inter: var(--font-inter);
+body {
+    font-family: var(--font-inter);
 }
 
 .tooltip::before {
