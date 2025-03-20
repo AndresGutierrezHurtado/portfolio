@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default;
+}
+
+:root {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    --color-base-100: #F6F6FF;
+    --color-base-content: #1F2937;
+    --color-primary: #0284C7;
+    --color-primary-content: #F6F6FF;
+}
+
+@theme inline {
+    --font-passion-one: var(--font-passion-one);
+    --font-inter: var(--font-inter);
+}
+
+.tooltip::before {
+    font-family: var(--font-inter);
+}
