@@ -1,11 +1,5 @@
 export default {
     name: "Andrés Gutiérrez Hurtado",
-    description: `<span class="text-primary font-semibold">Technician in Software Programming</span> with certified academic training in various technologies, with <span class="text-primary font-semibold">B1 level English proficiency</span>, and currently training as a Technologist in Software Analysis and Development.`,
-    about: `
-        <p>I'm <span class="text-primary font-semibold">Andrés Gutiérrez Hurtado</span>, a passionate software developer striving to continuously improve my skills and become one of the best in the field.</p>
-        <p>I worked as a monitor on a <span class="text-primary font-semibold">SENNOVA project</span>, leading the planning and development of an <span class="text-primary font-semibold">accessibility tool for WCAG documentation</span>.</p> 
-        <p>Additionally, <span class="text-primary font-semibold">I've led the best projects</span> during my training as a Technician and my current studies as a Technologist, showcasing strong leadership and the ability to execute effective technological solutions.</p>
-    `,
     age: new Date().getFullYear() - 2007,
     email: "andres52885241@gmail.com",
     github: "https://github.com/AndresGutierrezHurtado",
@@ -23,42 +17,42 @@ export default {
             title: "Especialización en Desarrollo Web",
             date: new Date("2025-03-01"),
             image: "https://media.licdn.com/dms/image/v2/D4E2DAQGLG7wTwOPoiQ/profile-treasury-document-images_800/B4EZWWjhftHUAo-/1/1741987650810?e=1743638400&v=beta&t=VFk4bwm70cc6hMwGuUcQw-lrpaqfl5JEflYA6TgxUFo",
-            link: "https://",
+            link: "https://github.com",
         },
         {
             institution: "Netzun",
             title: "Especializacion en SQL",
             date: new Date("2025-03-01"),
             image: "https://media.licdn.com/dms/image/v2/D4E2DAQGeBqGD5eFJfw/profile-treasury-document-images_800/B4EZWWisbwGYAo-/1/1741987433549?e=1743638400&v=beta&t=7Q7JttxfN_vgGrUQcUYECrigF-rrw8tsKlB_3GkZhCo",
-            link: "https://",
+            link: "https://github.com",
         },
         {
             institution: "Platzi",
             title: "Docker Avanzado",
             date: new Date("2025-03-01"),
             image: "https://media.licdn.com/dms/image/v2/D4E2DAQEw9VgP8ZRHvw/profile-treasury-document-images_800/B4EZWWuq1IG0Ak-/1/1741990573530?e=1743638400&v=beta&t=KqsF5Nf5lP5vfTaLk1cAN_pNWOEBcK9w5FvkJA28-xs",
-            link: "https://",
+            link: "https://github.com",
         },
         {
             institution: "Hacker Rank",
             title: "REST API Intermediate",
             date: new Date("2025-03-01"),
             image: "https://media.licdn.com/dms/image/v2/D4E2DAQEMscv8UL32_w/profile-treasury-document-images_800/B4EZWWpsiNGwAk-/1/1741989270587?e=1743638400&v=beta&t=v5kPOUbXtervibqp-P1dPD0QTVxkk1zOnKUccQPSg_E",
-            link: "https://",
+            link: "https://github.com",
         },
         {
             institution: "Servicio Nacional de Aprendizaje",
             title: "Desarrollo Web con PHP",
             date: new Date("2023-12-01"),
             image: "https://media.licdn.com/dms/image/v2/D4E2DAQG7yWjk4KSIRA/profile-treasury-document-images_800/B4EZWWrm8iGYAk-/1/1741989770065?e=1743638400&v=beta&t=ubXnQnvJhfB_YWifCcz4QmxfwUmVnnRmswnQ1_AQyV0",
-            link: "https://",
+            link: "https://github.com",
         },
         {
             institution: "Platzi",
             title: "Introducción a DevOps",
             date: new Date("2025-03-01"),
             image: "https://media.licdn.com/dms/image/v2/D4D2DAQH6xigd7zfz9w/profile-treasury-document-images_800/B4DZWiviTqHYAk-/1/1742192127274?e=1743638400&v=beta&t=3LrGAUyWLHAKSrIu-fjB9KvpHXNc-FsUlqChm_aDmo4",
-            link: "https://",
+            link: "https://github.com",
         },
     ],
     projects: [

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import data from "@/lib/data";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 // Components
 import {
@@ -14,10 +15,11 @@ import {
     MailIcon,
     PaperPlaneIcon,
 } from "@/components/icons";
-
 import * as Icons from "@/components/icons";
 
 export default function Home() {
+    const t = useTranslations("Index");
+    
     return (
         <>
             <section className="w-full px-3 mb-[170px]">
@@ -26,21 +28,24 @@ export default function Home() {
                         <div className="flex flex-col gap-5 w-full max-w-[530px]">
                             <div className="flex flex-col">
                                 <h3 className="text-xl font-bold text-primary">
-                                    This is <span className="italic">{data.name}</span>
+                                    {t("hero__subtitle")}
                                 </h3>
                                 <h1 className="[font-weight:900] text-7xl tracking-tight leading-[0.9]">
-                                    Web Developer
+                                    {t("hero__title")}
                                 </h1>
                             </div>
-                            <p
-                                className="text-pretty text-lg"
-                                dangerouslySetInnerHTML={{ __html: data.description }}
-                            ></p>
+                            <p className="text-pretty text-lg">
+                                {t.rich("hero__description", {
+                                    important: (chunks) => (
+                                        <span className="text-primary font-semibold">{chunks}</span>
+                                    ),
+                                })}
+                            </p>
                             <div className="flex gap-5">
                                 <Link href={`mailto:${data.email}`} target="_blank">
                                     <button className="btn btn-primary rounded-lg w-fit shadow-none">
                                         <MailIcon size={20} />
-                                        Contact me
+                                        {t("hero__email")}
                                     </button>
                                 </Link>
                                 <Link href="/documents/CV-ES.pdf" target="_blank">
