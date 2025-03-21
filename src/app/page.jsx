@@ -15,6 +15,8 @@ import {
     PaperPlaneIcon,
 } from "@/components/icons";
 
+import * as Icons from "@/components/icons";
+
 export default function Home() {
     return (
         <>
@@ -41,14 +43,18 @@ export default function Home() {
                                         Contact me
                                     </button>
                                 </Link>
-                                <button className="btn btn-secondary btn-outline rounded-lg w-fit shadow-none">
-                                    <DownloadIcon size={20} />
-                                    CV - ES
-                                </button>
-                                <button className="btn btn-secondary btn-outline rounded-lg w-fit shadow-none">
-                                    <DownloadIcon size={20} />
-                                    CV - EN
-                                </button>
+                                <Link href="/documents/CV-ES.pdf" target="_blank">
+                                    <button className="btn btn-secondary btn-outline rounded-lg w-fit shadow-none">
+                                        <DownloadIcon size={20} />
+                                        CV - ES
+                                    </button>
+                                </Link>
+                                <Link href="/documents/CV-EN.pdf" target="_blank">
+                                    <button className="btn btn-secondary btn-outline rounded-lg w-fit shadow-none">
+                                        <DownloadIcon size={20} />
+                                        CV - EN
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="h-full relative items-end hidden lg:flex">
@@ -173,14 +179,22 @@ export default function Home() {
 
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
-                    <h1 className="text-5xl font-extrabold tracking-tight py-10 text-center">Tech Stack</h1>
+                    <h1 className="text-5xl font-extrabold tracking-tight py-10 text-center">
+                        Tech Stack
+                    </h1>
                     <div className="flex flex-wrap items-center gap-[50px] justify-center">
-                        {data.techStack.map((skill, index) => (
-                            <div key={index} className="flex flex-col items-center gap-2">
-                                <LanguageIcon size={50} />
-                                <p className="text-center text-sm font-bold">{skill}</p>
-                            </div>
-                        ))}
+                        {data.techStack.map((skill, index) => {
+                            const Icon =
+                                Icons[skill.replace(".js", "").replace(".io", "").concat("Icon")] ||
+                                Icons.LanguageIcon;
+
+                            return (
+                                <div key={index} className="flex flex-col items-center gap-2">
+                                    <Icon size={50} />
+                                    <p className="text-center text-sm font-bold">{skill}</p>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </section>
@@ -292,61 +306,61 @@ export default function Home() {
             <section className="w-full px-3 mb-[100px]">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <h1 className="text-5xl font-extrabold tracking-tight py-10">Contact</h1>
-                    
+
                     <div className="card bg-white/80 backdrop-blur-[2px] shadow-xl h-fit w-full">
-                            <div className="card-body [&_p]:grow-0 px-8 py-10">
-                                <form className="space-y-2">
-                                    <div className="flex flex-col gap-2">
-                                        <h2 className="text-3xl font-extrabold">
-                                            ¡Queremos escucharte!
-                                        </h2>
-                                        <p className="leading-[1.35]">
-                                            Dejanos tu mensaje y nos pondremos en contacto.
-                                        </p>
-                                    </div>
+                        <div className="card-body [&_p]:grow-0 px-8 py-10">
+                            <form className="space-y-2">
+                                <div className="flex flex-col gap-2">
+                                    <h2 className="text-3xl font-extrabold">
+                                        ¡Queremos escucharte!
+                                    </h2>
+                                    <p className="leading-[1.35]">
+                                        Dejanos tu mensaje y nos pondremos en contacto.
+                                    </p>
+                                </div>
 
-                                    <fieldset className="fieldset">
-                                        <label className="fieldset-label font-medium text-base">
-                                            Correo electrónico:
-                                        </label>
-                                        <input
-                                            className="input w-full focus:outline-0 focus:border-primary bg-transparent"
-                                            placeholder="Ingresa tu correo electrónico"
-                                            name="user_email"
-                                        />
-                                    </fieldset>
+                                <fieldset className="fieldset">
+                                    <label className="fieldset-label font-medium text-base">
+                                        Correo electrónico:
+                                    </label>
+                                    <input
+                                        className="input w-full focus:outline-0 focus:border-primary bg-transparent"
+                                        placeholder="Ingresa tu correo electrónico"
+                                        name="user_email"
+                                    />
+                                </fieldset>
 
-                                    <fieldset className="fieldset">
-                                        <label className="fieldset-label font-medium text-base">
-                                            Asunto:
-                                        </label>
-                                        <input
-                                            className="input w-full focus:outline-0 focus:border-primary bg-transparent"
-                                            placeholder="Ingresa tu nombre"
-                                            name="email_subject"
-                                        />
-                                    </fieldset>
+                                <fieldset className="fieldset">
+                                    <label className="fieldset-label font-medium text-base">
+                                        Asunto:
+                                    </label>
+                                    <input
+                                        className="input w-full focus:outline-0 focus:border-primary bg-transparent"
+                                        placeholder="Ingresa tu nombre"
+                                        name="email_subject"
+                                    />
+                                </fieldset>
 
-                                    <fieldset className="fieldset">
-                                        <label className="fieldset-label font-medium text-base">
-                                            Mensaje:
-                                        </label>
-                                        <textarea
-                                            className="textarea w-full focus:outline-0 focus:border-primary bg-transparent resize-none h-32"
-                                            placeholder="Ingresa tu mensaje"
-                                            name="email_message"
-                                        ></textarea>
-                                    </fieldset>
+                                <fieldset className="fieldset">
+                                    <label className="fieldset-label font-medium text-base">
+                                        Mensaje:
+                                    </label>
+                                    <textarea
+                                        className="textarea w-full focus:outline-0 focus:border-primary bg-transparent resize-none h-32"
+                                        placeholder="Ingresa tu mensaje"
+                                        name="email_message"
+                                    ></textarea>
+                                </fieldset>
 
-                                    <div className="form-control flex flex-col gap-1 w-full pt-5">
-                                        <button className="btn w-full btn-primary">
-                                            <PaperPlaneIcon size={20} />
-                                            Enviar mensaje
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
+                                <div className="form-control flex flex-col gap-1 w-full pt-5">
+                                    <button className="btn w-full btn-primary">
+                                        <PaperPlaneIcon size={20} />
+                                        Enviar mensaje
+                                    </button>
+                                </div>
+                            </form>
                         </div>
+                    </div>
                 </div>
             </section>
         </>
