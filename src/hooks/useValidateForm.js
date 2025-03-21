@@ -14,7 +14,7 @@ import {
     ValiError,
 } from "valibot";
 
-export const useValidateform = (data = {}, form = "", t) => {
+export const validateForm = (data = {}, form = "", t) => {
 
     try {
         let schema;

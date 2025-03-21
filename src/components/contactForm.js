@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 import { ContactIcon, PaperPlaneIcon } from "./icons";
-import { useValidateform } from "@/hooks/useValidateForm";
+import { validateForm } from "@/hooks/useValidateForm";
 import Swal from "sweetalert2";
 
 export default function ContactForm() {
@@ -14,7 +14,7 @@ export default function ContactForm() {
         e.preventDefault();
 
         const data = Object.fromEntries(new FormData(e.target));
-        const validation = useValidateform(data, "contact-form", tv);
+        const validation = validateForm(data, "contact-form", tv);
 
         if (validation.success) {
             const res = await fetch("/api/email", {
