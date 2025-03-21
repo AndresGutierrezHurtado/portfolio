@@ -111,13 +111,43 @@ export default function Header() {
                                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
                             >
                                 <li>
-                                    <Link href="/#about">{t("header__link--1")}</Link>
+                                    <Link
+                                        activeClass="text-primary font-bold"
+                                        to="projects"
+                                        className="cursor-pointer"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={50}
+                                    >
+                                        {t("header__link--1")}
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#projects">{t("header__link--2")}</Link>
+                                    <Link
+                                        activeClass="text-primary font-bold"
+                                        to="certificates"
+                                        className="cursor-pointer"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={50}
+                                    >
+                                        {t("header__link--2")}
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#contact">{t("header__link--3")}</Link>
+                                    <Link
+                                        activeClass="text-primary font-bold"
+                                        to="contact"
+                                        className="cursor-pointer"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={50}
+                                    >
+                                        {t("header__link--3")}
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
