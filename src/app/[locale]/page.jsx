@@ -26,26 +26,26 @@ export default function Home() {
 
     return (
         <>
-            <section className="w-full px-3 mb-[170px]">
+            <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto flex flex-col justify-center pb-10">
-                    <div className="flex flex-row items-center justify-between">
+                    <div className="flex flex-row items-center justify-evenly lg:justify-between min-h-[70vh] lg:min-h-[auto]">
                         <div className="flex flex-col gap-5 w-full max-w-[530px]">
                             <div className="flex flex-col">
-                                <h3 className="text-xl font-bold text-primary">
+                                <h3 className="text-base lg:text-xl font-bold text-primary">
                                     {t("hero__subtitle")}
                                 </h3>
-                                <h1 className="[font-weight:900] text-7xl tracking-tight leading-[0.9]">
+                                <h1 className="[font-weight:900] text-5xl lg:text-7xl tracking-tight leading-[0.9]">
                                     {t("hero__title")}
                                 </h1>
                             </div>
-                            <p className="text-pretty text-lg">
+                            <p className="text-pretty text-lg leading-tight lg:leading-relaxed">
                                 {t.rich("hero__description", {
                                     important: (chunks) => (
                                         <span className="text-primary font-semibold">{chunks}</span>
                                     ),
                                 })}
                             </p>
-                            <div className="flex gap-5">
+                            <div className="flex flex-row flex-wrap items-center gap-5">
                                 <Link href={`mailto:${data.email}`} target="_blank">
                                     <button className="btn btn-primary rounded-lg w-fit shadow-none">
                                         <MailIcon size={20} />
@@ -124,7 +124,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <div className="animate-bounce text-center flex flex-col items-center gap-1 absolute top-[90vh] left-1/2 -translate-x-1/2">
+            <div className="animate-bounce text-center flex flex-col items-center gap-1 mt-5 mb-[100px]">
                 <h3 className="font-bold tracking-tight text-xl Capitalize">{t("hero__scroll")}</h3>
                 <CaretsDown size={25} />
             </div>
@@ -134,7 +134,7 @@ export default function Home() {
                     <h1 className="text-5xl font-extrabold tracking-tight text-center mb-12">
                         {t("about__title")}
                     </h1>
-                    <div className="flex [&>*]:flex-1 gap-10 items-center">
+                    <div className="flex flex-col lg:flex-row [&>*]:flex-1 gap-10 items-center">
                         <div className="flex flex-col gap-10">
                             <figure className="flex flex-col gap-7 items-center">
                                 <Image
@@ -198,7 +198,7 @@ export default function Home() {
                         <TechIcon />
                         {t("skills__title")}
                     </h1>
-                    <div className="flex flex-wrap items-center gap-[50px] justify-center">
+                    <div className="flex flex-wrap items-center gap-5 lg:gap-[50px] justify-center">
                         {data.techStack.map((skill, index) => {
                             const Icon =
                                 Icons[skill.replace(".js", "").replace(".io", "").concat("Icon")] ||
@@ -222,7 +222,7 @@ export default function Home() {
                     </h1>
                     <div>
                         {data.projects.map((project, index) => (
-                            <div key={index} className="flex gap-10 py-8">
+                            <div key={index} className="flex flex-col md:flex-row gap-10 py-8">
                                 <figure className="h-fit duration-300 bg-secondary flex-1 rounded-lg group overflow-hidden hover:-translate-y-1">
                                     <Image
                                         src={process.env.NEXT_PUBLIC_APP_DOMAIN + project.image}
@@ -246,7 +246,7 @@ export default function Home() {
                                             </p>
                                         ))}
                                     </div>
-                                    <p className="mt-5 grow text-pretty">
+                                    <p className="my-5 grow text-pretty">
                                         {t(project.description)}
                                     </p>
                                     <div className="flex gap-5">
@@ -280,8 +280,8 @@ export default function Home() {
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <div className="flex flex-col gap-10">
-                        <h1 className="text-5xl font-extrabold tracking-tight flex items-center gap-4">
-                            <CertificateIcon size={45} />
+                        <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight flex items-center gap-4">
+                            <CertificateIcon />
                             {t("certificates__title")}
                         </h1>
 

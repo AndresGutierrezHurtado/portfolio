@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <footer className="w-full px-3">
             <div className="w-full max-w-[1200px] mx-auto pb-5">
-                <div className="w-full bg-white border border-black/10 rounded-full px-5 py-1 flex justify-between font-medium">
+                <div className="w-full bg-white border border-black/10 rounded-full px-5 py-1 flex flex-col md:flex-row justify-between font-medium">
                     <p>&copy; Andres Dev {new Date().getFullYear()}</p>
                     <nav>
                         <ul className="flex flex-row gap-3">
