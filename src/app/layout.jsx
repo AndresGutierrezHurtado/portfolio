@@ -1,6 +1,8 @@
 import { Passion_One, Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Header from "@/layout/header";
 import Footer from "@/layout/footer";
@@ -20,8 +22,7 @@ const inter = Inter({
 
 export const metadata = {
     title: "Portfolio de Andrés Gutiérrez Hurtado - Desarrollador y Programador Web y Mobile",
-    description:
-        "Portfolio de Andrés Gutiérrez Hurtado - Desarrollador y Programador Web y Mobile",
+    description: "Portfolio de Andrés Gutiérrez Hurtado - Desarrollador y Programador Web y Mobile",
 };
 
 export default async function RootLayout({ children }) {
@@ -30,7 +31,12 @@ export default async function RootLayout({ children }) {
     return (
         <html lang={locale}>
             <head>
-                <link rel="icon" href={process.env.NEXT_PUBLIC_APP_DOMAIN + "/code-icon.png"} type="image/png" sizes="any" />
+                <link
+                    rel="icon"
+                    href={process.env.NEXT_PUBLIC_APP_DOMAIN + "/code-icon.png"}
+                    type="image/png"
+                    sizes="any"
+                />
             </head>
             <NextIntlClientProvider locale={locale}>
                 <body
@@ -38,6 +44,7 @@ export default async function RootLayout({ children }) {
                 >
                     <Header />
                     <main className="flex-1">{children}</main>
+                    <ToastContainer position="bottom-right" autoClose={3000} />
                     <Footer />
                 </body>
             </NextIntlClientProvider>
