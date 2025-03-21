@@ -71,7 +71,9 @@ export default function Home() {
                                 src={process.env.NEXT_PUBLIC_APP_DOMAIN + "/hero-image.png"}
                                 width={400}
                                 height={400}
-                                alt="Andres Gutierrez"
+                                style={{ objectFit: "contain", width: 400, height: "auto" }}
+                                alt="Imagen de Andres Gutierrez"
+                                priority
                             />
                             <div className="w-[400px] aspect-square bg-primary rounded-full absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1]"></div>
                         </div>
