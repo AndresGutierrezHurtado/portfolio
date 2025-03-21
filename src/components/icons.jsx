@@ -4,6 +4,7 @@ import { FiGithub as GithubIcon } from "react-icons/fi";
 import { FaLinkedinIn as LinkedinIcon, FaCertificate as CertificateIcon, FaArrowRight as ArrowRight } from "react-icons/fa6";
 import { PiCaretDoubleDownBold as CaretsDown } from "react-icons/pi";
 import { AiOutlineExport as ExportIcon } from "react-icons/ai";
+import { FaPaperPlane as PaperPlaneIcon } from "react-icons/fa";
 
 const SpainIcon = (props) => {
     return <img src="/spain-flag.svg" {...props} alt="Spanish flag" />;
@@ -25,4 +26,5 @@ export {
     ExportIcon,
     CertificateIcon,
     ArrowRight,
+    PaperPlaneIcon,
 };

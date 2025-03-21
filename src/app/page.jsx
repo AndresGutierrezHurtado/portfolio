@@ -1,8 +1,19 @@
 import Image from "next/image";
 import data from "@/lib/data";
 import Link from "next/link";
-import { CaretsDown, DownloadIcon, GithubIcon, LinkedinIcon, MailIcon } from "@/components/icons";
-import * as Icons from "@/components/icons";
+
+// Components
+import {
+    ArrowRight,
+    CaretsDown,
+    DownloadIcon,
+    ExportIcon,
+    GithubIcon,
+    LanguageIcon,
+    LinkedinIcon,
+    MailIcon,
+    PaperPlaneIcon,
+} from "@/components/icons";
 
 export default function Home() {
     return (
@@ -119,14 +130,14 @@ export default function Home() {
                                 <div className="w-full max-w-[150px] h-1.5 bg-primary rounded-full"></div>
                             </figure>
                             <div
-                                className="flex flex-col gap-4 leading-tight"
+                                className="flex flex-col gap-4 leading-tight text-lg text-pretty"
                                 dangerouslySetInnerHTML={{ __html: data.about }}
                             ></div>
                         </div>
                         <div>
                             <ol className="relative border-s-2 border-secondary">
                                 {data.experiences.map((ex, index) => (
-                                    <li className="mb-10 ms-4" key={index}>
+                                    <li className="mb-7 ms-4" key={index}>
                                         <div className="absolute w-3 h-3 bg-secondary rounded-full mt-[8px] -start-[6.5px] border border-white"></div>
                                         <time className="mb-1 text-sm font-normal leading-none text-secondary/80 font-medium">
                                             {ex.dateStart.toLocaleString("en-US", {
@@ -148,7 +159,7 @@ export default function Home() {
                                                     {ex.title}
                                                 </p>
                                             </div>
-                                            <p className="mb-4 text-base font-normal text-secondary/80">
+                                            <p className="leadint-tight text-base font-normal text-secondary/80">
                                                 {ex.description}
                                             </p>
                                         </div>
@@ -162,11 +173,11 @@ export default function Home() {
 
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
-                    <h1 className="text-5xl font-extrabold tracking-tight py-10">Tech Stack</h1>
+                    <h1 className="text-5xl font-extrabold tracking-tight py-10 text-center">Tech Stack</h1>
                     <div className="flex flex-wrap items-center gap-[50px] justify-center">
                         {data.techStack.map((skill, index) => (
                             <div key={index} className="flex flex-col items-center gap-2">
-                                <Icons.LanguageIcon size={50} />
+                                <LanguageIcon size={50} />
                                 <p className="text-center text-sm font-bold">{skill}</p>
                             </div>
                         ))}
@@ -178,22 +189,21 @@ export default function Home() {
                     <h1 className="text-5xl font-extrabold tracking-tight py-10">Projects</h1>
                     <div>
                         {data.projects.map((project, index) => (
-                            <div
-                                key={index}
-                                className="flex gap-5 border border-black/10 p-8 rounded-xl "
-                            >
-                                <figure className="border aspect-video border w-1/2 rounded-lg">
-                                    {/* <Image
+                            <div key={index} className="flex gap-10 py-8">
+                                <figure className="h-fit duration-300 bg-secondary flex-1 rounded-lg group overflow-hidden hover:-translate-y-1">
+                                    <Image
                                         src={process.env.NEXT_PUBLIC_APP_DOMAIN + project.image}
                                         width={500}
                                         height={500}
                                         alt={project.name}
-                                        className="object-cover rounded-lg aspect-square shadow-lg shadow-black/50"
-                                    /> */}
+                                        className="w-full h-[285px] object-contain rounded-lg aspect-square shadow-lg shadow-black/50 scale-[1.15] group-hover:scale-[1] duration-300"
+                                    />
                                 </figure>
-                                <div className="flex flex-col">
-                                    <h2 className="text-3xl font-bold">{project.name}</h2>
-                                    <div className="flex flex-wrap gap-5">
+                                <div className="flex-1 flex flex-col">
+                                    <h2 className="text-3xl font-extrabold tracking-tight mb-1.5">
+                                        {project.name}
+                                    </h2>
+                                    <div className="flex flex-wrap gap-3">
                                         {project.tags.map((tag, index) => (
                                             <p
                                                 key={index}
@@ -203,7 +213,7 @@ export default function Home() {
                                             </p>
                                         ))}
                                     </div>
-                                    <p className="mt-5 grow">{project.description}</p>
+                                    <p className="mt-5 grow text-pretty">{project.description}</p>
                                     <div className="flex gap-5">
                                         {project.link && (
                                             <Link
@@ -211,7 +221,7 @@ export default function Home() {
                                                 target="_blank"
                                                 className="btn btn-primary rounded-lg px-5 shadow-none"
                                             >
-                                                <Icons.ExportIcon />
+                                                <ExportIcon />
                                                 <span>Link</span>
                                             </Link>
                                         )}
@@ -221,7 +231,7 @@ export default function Home() {
                                                 target="_blank"
                                                 className="btn btn-primary rounded-lg px-5 shadow-none"
                                             >
-                                                <Icons.GithubIcon />
+                                                <GithubIcon />
                                                 <span>GitHub</span>
                                             </Link>
                                         )}
@@ -241,31 +251,29 @@ export default function Home() {
                             {data.certificates.map((certificate, index) => (
                                 <div
                                     key={index}
-                                    className="flex flex-col rounded-xl overflow-hidden border border-black/10"
+                                    className="flex flex-col rounded-xl overflow-hidden border border-black/10 group"
                                 >
                                     <div className="w-full bg-sky-500 h-1"></div>
-                                    <div className="w-full bg-white p-2 border-b border-black/10 tracking-tight font-medium">
+                                    <div className="w-full bg-white p-2 border-b border-black/10 tracking-tight font-medium z-[1]">
                                         {certificate.title}
                                     </div>
-                                    <figure className="w-full bg-[linear-gradient(to_bottom,_rgba(0,0,0,0)40%,_rgba(0,0,0,0.65)100%)] relative">
+                                    <figure className="w-full relative max-h-[200px]">
+                                        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/75 z-[1]"></div>
                                         <Image
                                             src={certificate.image}
-                                            width={500}
-                                            height={200}
+                                            width={600}
+                                            height={300}
                                             alt={"imagen de " + certificate.title}
-                                            className="object-cover aspect-3/2 shadow-lg shadow-black/50"
+                                            className="h-full w-full object-contain scale-[1.2] group-hover:scale-[.9] duration-300 z-[-1]"
                                         />
-                                        <div className="absolute bottom-0 left-0 w-full p-5 flex justify-between">
-                                            <Link href="" target="_blank">
+                                        <div className="absolute bottom-0 left-0 w-full p-5 flex justify-between z-[1]">
+                                            <Link href={certificate.link} target="_blank">
                                                 <p className="text-white tracking-loose text-sm font-medium">
                                                     View Certificate
                                                 </p>
                                             </Link>
                                             <Link href="" target="_blank">
-                                                <Icons.ArrowRight
-                                                    size={20}
-                                                    className="text-white"
-                                                />
+                                                <ArrowRight size={20} className="text-white" />
                                             </Link>
                                         </div>
                                     </figure>
@@ -284,6 +292,61 @@ export default function Home() {
             <section className="w-full px-3 mb-[100px]">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <h1 className="text-5xl font-extrabold tracking-tight py-10">Contact</h1>
+                    
+                    <div className="card bg-white/80 backdrop-blur-[2px] shadow-xl h-fit w-full">
+                            <div className="card-body [&_p]:grow-0 px-8 py-10">
+                                <form className="space-y-2">
+                                    <div className="flex flex-col gap-2">
+                                        <h2 className="text-3xl font-extrabold">
+                                            ¡Queremos escucharte!
+                                        </h2>
+                                        <p className="leading-[1.35]">
+                                            Dejanos tu mensaje y nos pondremos en contacto.
+                                        </p>
+                                    </div>
+
+                                    <fieldset className="fieldset">
+                                        <label className="fieldset-label font-medium text-base">
+                                            Correo electrónico:
+                                        </label>
+                                        <input
+                                            className="input w-full focus:outline-0 focus:border-primary bg-transparent"
+                                            placeholder="Ingresa tu correo electrónico"
+                                            name="user_email"
+                                        />
+                                    </fieldset>
+
+                                    <fieldset className="fieldset">
+                                        <label className="fieldset-label font-medium text-base">
+                                            Asunto:
+                                        </label>
+                                        <input
+                                            className="input w-full focus:outline-0 focus:border-primary bg-transparent"
+                                            placeholder="Ingresa tu nombre"
+                                            name="email_subject"
+                                        />
+                                    </fieldset>
+
+                                    <fieldset className="fieldset">
+                                        <label className="fieldset-label font-medium text-base">
+                                            Mensaje:
+                                        </label>
+                                        <textarea
+                                            className="textarea w-full focus:outline-0 focus:border-primary bg-transparent resize-none h-32"
+                                            placeholder="Ingresa tu mensaje"
+                                            name="email_message"
+                                        ></textarea>
+                                    </fieldset>
+
+                                    <div className="form-control flex flex-col gap-1 w-full pt-5">
+                                        <button className="btn w-full btn-primary">
+                                            <PaperPlaneIcon size={20} />
+                                            Enviar mensaje
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                 </div>
             </section>
         </>
