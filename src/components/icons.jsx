@@ -1,12 +1,21 @@
 import { FiGithub as GithubIcon } from "react-icons/fi";
-import { GrLanguage as LanguageIcon } from "react-icons/gr";
 import { AiOutlineExport as ExportIcon } from "react-icons/ai";
 import { PiCaretDoubleDownBold as CaretsDown } from "react-icons/pi";
-import { MdOutlineFileDownload as DownloadIcon, MdMailOutline as MailIcon } from "react-icons/md";
+import {
+    MdOutlineFileDownload as DownloadIcon,
+    MdMailOutline as MailIcon,
+    MdContactSupport as ContactIcon,
+} from "react-icons/md";
+import {
+    GrLanguage as LanguageIcon,
+    GrTechnology as TechIcon,
+    GrProjects as ProjectsIcon,
+} from "react-icons/gr";
 import {
     FaLinkedinIn as LinkedinIcon,
     FaCertificate as CertificateIcon,
     FaArrowRight as ArrowRight,
+    FaCode as CodeIcon,
 } from "react-icons/fa6";
 import {
     FaPaperPlane as PaperPlaneIcon,
@@ -70,7 +79,11 @@ export {
     LinkedinIcon,
     CaretsDown,
     ExportIcon,
-    CertificateIcon,
     ArrowRight,
     PaperPlaneIcon,
+    CodeIcon,
+    CertificateIcon,
+    ProjectsIcon,
+    TechIcon,
+    ContactIcon,
 };

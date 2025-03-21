@@ -14,6 +14,10 @@ import {
     LinkedinIcon,
     MailIcon,
     PaperPlaneIcon,
+    CodeIcon,
+    TechIcon,
+    ContactIcon,
+    CertificateIcon,
 } from "@/components/icons";
 import * as Icons from "@/components/icons";
 
@@ -188,7 +192,8 @@ export default function Home() {
 
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
-                    <h1 className="text-5xl font-extrabold tracking-tight py-10 text-center">
+                    <h1 className="text-5xl font-extrabold tracking-tight py-10 flex items-center justify-center gap-2">
+                        <TechIcon />
                         {t("skills__title")}
                     </h1>
                     <div className="flex flex-wrap items-center gap-[50px] justify-center">
@@ -209,7 +214,8 @@ export default function Home() {
             </section>
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
-                    <h1 className="text-5xl font-extrabold tracking-tight py-10">
+                    <h1 className="text-5xl font-extrabold tracking-tight py-10 flex items-center gap-4">
+                        <CodeIcon size={45} />
                         {t("projects__title")}
                     </h1>
                     <div>
@@ -272,7 +278,8 @@ export default function Home() {
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <div className="flex flex-col gap-10">
-                        <h1 className="text-5xl font-extrabold tracking-tight">
+                        <h1 className="text-5xl font-extrabold tracking-tight flex items-center gap-4">
+                            <CertificateIcon size={45} />
                             {t("certificates__title")}
                         </h1>
 
@@ -312,8 +319,9 @@ export default function Home() {
 
                         <div className="w-full flex justify-center">
                             <Link href={data.linkedin + "/details/certifications/"} target="_blank">
-                                <button className="btn btn-primary">
+                                <button className="btn btn-primary flex gap-4 items-center">
                                     {t("certificates__all")}
+                                    <ArrowRight size={18} />
                                 </button>
                             </Link>
                         </div>
@@ -323,7 +331,8 @@ export default function Home() {
             <section className="w-full px-3 mb-[100px]">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <div className="flex flex-col gap-2 py-10">
-                        <h1 className="text-5xl font-extrabold tracking-tight">
+                        <h1 className="text-5xl font-extrabold tracking-tight flex items-center gap-2">
+                            <ContactIcon size={50} />
                             {t("contact__title")}
                         </h1>
                         <p className="text-xl text-pretty">{t("contact__description")}</p>
