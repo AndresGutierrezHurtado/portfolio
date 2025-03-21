@@ -24,7 +24,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className="w-full px-3 sticky top-0">
+        <header className="w-full px-3 sticky top-0 z-50">
             <div className="w-full max-w-[1200px] mx-auto py-3">
                 <div className="navbar rounded-full duration-300 backdrop-blur-[2px]" ref={navbarRef}>
                     <div className="navbar-start text-5xl font-passion-one">
