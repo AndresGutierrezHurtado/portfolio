@@ -6,6 +6,12 @@
         "footer__link--contact": "Contact",
         "footer__link--about": "About"
     },
+    "Validations": {
+        "required": "This field is required",
+        "min": "This field must have at least {min} characters",
+        "max": "This field must have less than {max} characters",
+        "email": "This field must be an email address"
+    },
     "Index": {
         "hero__subtitle": "This is Andrés Gutiérrez Hurtado",
         "hero__title": "Software Developer",

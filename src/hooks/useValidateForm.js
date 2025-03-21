@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { toast } from "react-toastify";
 import {
     email,
@@ -13,7 +14,8 @@ import {
     ValiError,
 } from "valibot";
 
-export const useValidateform = (data = {}, form = "") => {
+export const useValidateform = (data = {}, form = "", t) => {
+
     try {
         let schema;
 
@@ -21,19 +23,19 @@ export const useValidateform = (data = {}, form = "") => {
             case "contact-form":
                 schema = object({
                     user_email: pipe(
-                        nonEmpty("Correo requerido"),
-                        string("Correo requerido"),
-                        email("El correo debe ser válido")
+                        nonEmpty(t("required")),
+                        string(t("required")),
+                        email(t("email"))
                     ),
                     email_subject: pipe(
-                        nonEmpty("Asunto requerido"),
-                        string("Asunto requerido"),
-                        minLength(5, "El asunto debe tener al menos 5 caracteres")
+                        nonEmpty(t("required")),
+                        string(t("required")),
+                        minLength(5, t("min", { min: 5 }))
                     ),
                     email_message: pipe(
-                        nonEmpty("Mensaje requerido"),
-                        string("Mensaje requerido"),
-                        minLength(10, "El mensaje debe tener al menos 10 caracteres")
+                        nonEmpty(t("required")),
+                        string(t("required")),
+                        minLength(10, t("min", { min: 10 }))
                     ),
                 });
                 break;

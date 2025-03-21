@@ -6,6 +6,12 @@
         "footer__link--contact": "Contacto",
         "footer__link--about": "Sobre mí"
     },
+    "Validations": {
+        "required": "Este campo es obligatorio",
+        "min": "Este campo debe tener al menos {min} carácteres",
+        "max": "Este campo debe tener menos de {max} carácteres",
+        "email": "Este campo debe ser un correo electrónico"
+    },
     "Index": {
         "hero__subtitle": "Hey, soy Andrés Gutiérrez Hurtado",
         "hero__title": "Desarrollador de Software",
@@ -63,6 +69,11 @@
         "contact__placeholder--email": "Escribe tu correo",
         "contact__placeholder--message": "Escribe tu mensaje",
         "contact__placeholder--subject": "Escribe el asunto",
-        "contact__submit": "Envia tu mensaje"
+        "contact__submit": "Envia tu mensaje",
+        "contact__success--title": "Gracias por tu mensaje",
+        "contact__success--text": "Te responderé a la brevedad, {email}.",
+        "contact__success--button": "Volver",
+        "contact__error--title": "Error al enviar el mensaje",
+        "contact__error--text": "Ha ocurrido un error al enviar el mensaje, inténtalo de nuevo: {error}."
     }
 }

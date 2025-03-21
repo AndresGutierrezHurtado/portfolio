@@ -4,19 +4,20 @@ import { useTranslations } from "next-intl";
 import React from "react";
 import { ContactIcon, PaperPlaneIcon } from "./icons";
 import { useValidateform } from "@/hooks/useValidateForm";
+import Swal from "sweetalert2";
 
 export default function ContactForm() {
     const t = useTranslations("Index");
+    const tv = useTranslations("Validations");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         const data = Object.fromEntries(new FormData(e.target));
-        // const validation = { success: data.user_email && data.email_subject && data.email_message };
-        const validation = useValidateform(data, "contact-form");
+        const validation = useValidateform(data, "contact-form", tv);
 
         if (validation.success) {
-            fetch("/api/email", {
+            const res = await fetch("/api/email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -24,6 +25,23 @@ export default function ContactForm() {
                 },
                 body: JSON.stringify(data),
             });
+            const response = await res.json();
+
+            if (response.success) {
+                Swal.fire({
+                    icon: "success",
+                    title: t("contact__success--title"),
+                    text: t("contact__success--text", { email: data.user_email }),
+                    confirmButtonText: t("contact__success--button"),
+                });
+                e.target.reset();
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: t("contact__error--title"),
+                    text: t("contact__error--text", { error: response.message }),
+                });
+            }
         }
     };
     return (
