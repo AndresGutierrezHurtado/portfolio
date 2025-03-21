@@ -27,7 +27,7 @@ export default function Home() {
 
     return (
         <>
-            <section className="w-full px-3">
+            <section className="w-full px-3" name="hero">
                 <div className="w-full max-w-[1200px] mx-auto flex flex-col justify-center pb-10">
                     <div className="flex flex-row items-center justify-evenly lg:justify-between min-h-[70vh] lg:min-h-[auto]">
                         <div className="flex flex-col gap-5 w-full max-w-[530px]">
@@ -201,21 +201,19 @@ export default function Home() {
                     </h1>
                     <div className="flex flex-wrap items-center gap-5 lg:gap-[50px] justify-center">
                         {data.techStack.map((skill, index) => {
-                            const Icon =
-                                Icons[skill.replace(".js", "").replace(".io", "").concat("Icon")] ||
-                                Icons.LanguageIcon;
+                            const Icon = Icons[skill.icon] || Icons.LanguageIcon;
 
                             return (
                                 <div key={index} className="flex flex-col items-center gap-2">
                                     <Icon size={50} />
-                                    <p className="text-center text-sm font-bold">{skill}</p>
+                                    <p className="text-center text-sm font-bold">{skill.name}</p>
                                 </div>
                             );
                         })}
                     </div>
                 </div>
             </section>
-            <section className="w-full px-3">
+            <section className="w-full px-3" name="projects">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <h1 className="text-5xl font-extrabold tracking-tight py-10 flex items-center gap-4">
                         <CodeIcon size={45} />
@@ -238,14 +236,18 @@ export default function Home() {
                                         {t(project.name)}
                                     </h2>
                                     <div className="flex flex-wrap gap-3">
-                                        {project.tags.map((tag, index) => (
-                                            <p
-                                                key={index}
-                                                className="badge badge-secondary badge-soft"
-                                            >
-                                                {tag}
-                                            </p>
-                                        ))}
+                                        {project.tags.map((tag, index) => {
+                                            const Icon = Icons[tag.icon] || Icons.LanguageIcon;
+                                            return (
+                                                <p
+                                                    key={index}
+                                                    className={`badge font-medium ${tag.color}  ${tag.background} ${tag.border}`}
+                                                >
+                                                    <Icon size={15} />
+                                                    {tag.name}
+                                                </p>
+                                            );
+                                        })}
                                     </div>
                                     <p className="my-5 grow text-pretty">
                                         {t(project.description)}
@@ -255,9 +257,10 @@ export default function Home() {
                                             <Link
                                                 href={project.link}
                                                 target="_blank"
-                                                className="btn btn-primary rounded-lg px-5 shadow-none"
+                                                className="btn btn-outline btn-primary rounded-lg px-5 shadow-none tooltip tooltip-bottom"
+                                                data-tip={t("projects__button--website")}
                                             >
-                                                <ExportIcon />
+                                                <ExportIcon size={20} />
                                                 <span>Link</span>
                                             </Link>
                                         )}
@@ -265,9 +268,10 @@ export default function Home() {
                                             <Link
                                                 href={project.github}
                                                 target="_blank"
-                                                className="btn btn-primary rounded-lg px-5 shadow-none"
+                                                className="btn btn-secondary rounded-lg px-5 shadow-none tooltip tooltip-bottom"
+                                                data-tip={t("projects__button--github")}
                                             >
-                                                <GithubIcon />
+                                                <GithubIcon size={20} />
                                                 <span>GitHub</span>
                                             </Link>
                                         )}
@@ -278,7 +282,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="w-full px-3">
+            <section className="w-full px-3" name="certificates">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <div className="flex flex-col gap-10">
                         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight flex items-center gap-4">

@@ -40,6 +40,8 @@
         },
         "skills__title": "Skills",
         "projects__title": "Projects",
+        "projects__button--github": "View the repository on GitHub",
+        "projects__button--website": "View the website",
         "projects": {
             "ac_computers": {
                 "name": "AC Computers",

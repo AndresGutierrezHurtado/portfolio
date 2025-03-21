@@ -27,4 +27,5 @@ body {
 
 .tooltip::before {
     font-family: var(--font-inter);
+    font-weight: 400;
 }

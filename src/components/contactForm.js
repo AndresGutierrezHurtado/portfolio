@@ -45,7 +45,7 @@ export default function ContactForm() {
         }
     };
     return (
-        <section className="w-full px-3 mb-[100px]">
+        <section className="w-full px-3 mb-[40px]" name="contact">
             <div className="w-full max-w-[1200px] mx-auto py-10">
                 <div className="flex flex-col gap-2 py-10">
                     <h1 className="text-5xl font-extrabold tracking-tight flex items-center gap-2">

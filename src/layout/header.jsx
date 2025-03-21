@@ -2,9 +2,9 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { SpainIcon, UsaIcon } from "@/components/icons";
-import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 import { usePathname, useRouter } from "@/i18n/navigation";
+import { Link } from "react-scroll";
 
 export default function Header() {
     const t = useTranslations("Layout");
@@ -34,28 +34,62 @@ export default function Header() {
         <header className="w-full px-3 sticky top-0 z-50">
             <div className="w-full max-w-[1200px] mx-auto py-3">
                 <div
-                    className="navbar rounded-full duration-300 backdrop-blur-[2px]"
+                    className="navbar rounded-full duration-300 backdrop-blur-[2px] py-1"
                     ref={navbarRef}
                 >
                     <div className="navbar-start text-xl sm:text-3xl md:text-5xl text-nowrap font-passion-one leading-tight">
-                        <Link href="/">
+                        <Link to="hero" className="cursor-pointer" smooth={true} duration={500}>
                             Andres Dev <span className="text-xl md:text-5xl text-primary">.</span>
                         </Link>
                     </div>
                     <div className="navbar-center">
                         <ul className="flex flex-row gap-7 text-lg font-medium hidden lg:flex">
                             <li className="duration-300 hover:text-primary hover:font-bold hover:scale-[1.05]">
-                                <Link href="/#about">{t("header__link--1")}</Link>
+                                <Link
+                                    activeClass="text-primary font-bold"
+                                    to="projects"
+                                    className="cursor-pointer"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={50}
+                                >
+                                    {t("header__link--1")}
+                                </Link>
                             </li>
                             <li className="duration-300 hover:text-primary hover:font-bold hover:scale-[1.05]">
-                                <Link href="/#projects">{t("header__link--2")}</Link>
+                                <Link
+                                    activeClass="text-primary font-bold"
+                                    to="certificates"
+                                    className="cursor-pointer"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={50}
+                                >
+                                    {t("header__link--2")}
+                                </Link>
                             </li>
                             <li className="duration-300 hover:text-primary hover:font-bold hover:scale-[1.05]">
-                                <Link href="/#contact">{t("header__link--3")}</Link>
+                                <Link
+                                    activeClass="text-primary font-bold"
+                                    to="contact"
+                                    className="cursor-pointer"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={50}
+                                >
+                                    {t("header__link--3")}
+                                </Link>
                             </li>
                         </ul>
                         <div className="dropdown">
-                            <div tabIndex={0} role="button" className="btn btn-sm btn-ghost lg:hidden">
+                            <div
+                                tabIndex={0}
+                                role="button"
+                                className="btn btn-sm btn-ghost lg:hidden"
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-5 w-5"
