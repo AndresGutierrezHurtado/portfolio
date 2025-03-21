@@ -1,8 +1,22 @@
 {
+    "Layout": {
+        "header__link--1": "Projects",
+        "header__link--2": "Certificates",
+        "header__link--3": "Contact",
+        "footer__link--contact": "Contact",
+        "footer__link--about": "About"
+    },
     "Index": {
         "hero__subtitle": "This is Andrés Gutiérrez Hurtado",
         "hero__title": "Software Developer",
         "hero__description": "<important>Technician in Software Programming</important> with certified academic training in various technologies, with <important>B1 level English proficiency</important>, and currently training as a Technologist in Software Analysis and Development.",
-        "hero__email": "Contact me"
+        "hero__email": "Contact me",
+        "hero__stat--years": "Years of experience",
+        "hero__stat--projects": "Projects built",
+        "hero__stat--certifications": "certifications",
+        "hero__stat--commits": "Commits on GitHub",
+        "hero__scroll": "Scroll down",
+        "about__title": "About me 👋",
+        "about__description": "<p>I'm <important>Andrés Gutiérrez Hurtado</important>, a passionate software developer striving to continuously improve my skills and become one of the best in the field.</p><p>I worked as a monitor on a <important>SENNOVA project</important>, leading the planning and development of an <important>accessibility tool for WCAG documentation</important>.</p> <p>Additionally, <important>I've led the best projects</important> during my training as a Technician and my current studies as a Technologist, showcasing strong leadership and the ability to execute effective technological solutions.</p>"
     }
 }

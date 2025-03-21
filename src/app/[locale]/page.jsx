@@ -19,7 +19,7 @@ import * as Icons from "@/components/icons";
 
 export default function Home() {
     const t = useTranslations("Index");
-    
+
     return (
         <>
             <section className="w-full px-3 mb-[170px]">
@@ -94,32 +94,32 @@ export default function Home() {
                             <h1 className="text-5xl font-extrabold tracking-tight">
                                 {data.stats.yearsOfExperience}
                             </h1>
-                            <p>Years of experience</p>
+                            <p>{t("hero__stat--years")}</p>
                         </div>
                         <div className="">
                             <h1 className="text-5xl font-extrabold tracking-tight">
                                 +{data.stats.certificationsCount}
                             </h1>
-                            <p>Certifications</p>
+                            <p>{t("hero__stat--certifications")}</p>
                         </div>
                         <div className="">
                             <h1 className="text-5xl font-extrabold tracking-tight">
                                 +{data.stats.websitesBuilt}
                             </h1>
-                            <p>Websites built</p>
+                            <p>{t("hero__stat--projects")}</p>
                         </div>
                         <div className="">
                             <h1 className="text-5xl font-extrabold tracking-tight">
                                 +{data.stats.commitsCount.toLocaleString()}
                             </h1>
-                            <p>Commits on GitHub</p>
+                            <p>{t("hero__stat--commits")}</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <div className="animate-bounce text-center flex flex-col items-center gap-1 absolute top-[90vh] left-1/2 -translate-x-1/2">
-                <h3 className="font-bold tracking-tight text-xl">SCROLL DOWN</h3>
+                <h3 className="font-bold tracking-tight text-xl Capitalize">{t("hero__scroll")}</h3>
                 <CaretsDown size={25} />
             </div>
 
@@ -140,10 +140,14 @@ export default function Home() {
                                 />
                                 <div className="w-full max-w-[150px] h-1.5 bg-primary rounded-full"></div>
                             </figure>
-                            <div
-                                className="flex flex-col gap-4 leading-tight text-lg text-pretty"
-                                dangerouslySetInnerHTML={{ __html: data.about }}
-                            ></div>
+                            <div className="flex flex-col gap-4 leading-tight text-lg text-pretty">
+                                {t.rich("about__description", {
+                                    important: (chunks) => (
+                                        <span className="text-primary font-semibold">{chunks}</span>
+                                    ),
+                                    p: (chunks) => <p className="text-pretty">{chunks}</p>,
+                                })}
+                            </div>
                         </div>
                         <div>
                             <ol className="relative border-s-2 border-secondary">
