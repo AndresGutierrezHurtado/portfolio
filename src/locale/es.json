@@ -16,7 +16,53 @@
         "hero__stat--certifications": "Certificaciones",
         "hero__stat--commits": "Commits en GitHub",
         "hero__scroll": "Desliza hacia abajo",
-        "about__title": "About me 👋",
-        "about__description": "<p>Soy <important>Andrés Gutiérrez Hurtado</important>, un apasionado desarrollador de software que busca mejorar continuamente sus habilidades y convertirse en uno de los mejores en el campo.</p><p>Trabajé como monitor en un <important>proyecto SENNOVA</important>, liderando la planificación y el desarrollo de una <important>herramienta de accesibilidad para la documentación WCAG</important>.</p> <p>Además, he liderado <important>los mejores proyectos</important> durante mi formación como Técnico y en mis estudios actuales como Tecnólogo, demostrando un fuerte liderazgo y la capacidad de ejecutar soluciones tecnológicas efectivas.</p>"
+        "about__title": "Sobre mí 👋",
+        "about__description": "<p>Soy <important>Andrés Gutiérrez Hurtado</important>, un apasionado desarrollador de software que busca mejorar continuamente sus habilidades y convertirse en uno de los mejores en el campo.</p><p>Trabajé como monitor en un <important>proyecto SENNOVA</important>, liderando la planificación y el desarrollo de una <important>herramienta de accesibilidad para la documentación WCAG</important>.</p> <p>Además, he liderado <important>los mejores proyectos</important> durante mi formación como Técnico y en mis estudios actuales como Tecnólogo, demostrando un fuerte liderazgo y la capacidad de ejecutar soluciones tecnológicas efectivas.</p>",
+        "experience": {
+            "plataforma_av": {
+                "title": "Desarrollador Junior",
+                "description": "Realizaré mis practicas como tecnólogo en Plataforma AV, donde contribuiré desarrollando las soluciones de software requeridas para apoyar las necesidades de la empresa."
+            },
+            "ac_computers": {
+                "title": "Analista y Desarrollador de Software",
+                "description": "Colaboré con AC Computers para desarrollar su catálogo de productos en línea, mejorando su presencia web y accesibilidad para los clientes. Trabajé en el diseño e implementación de una interfaz receptiva y fácil de usar, asegurando una experiencia de navegación intuitiva."
+            },
+            "sennova": {
+                "title": "Monitor | Analista y Desarrollador de Software",
+                "description": "Trabajé en la documentación en español de las WCAG 2.1, creando guías y ejemplos para facilitar su implementación. Desarrollé una herramienta de accesibilidad web para proyectos en React. Presenté este proyecto en conferencias y eventos, destacando la importancia de la accesibilidad digital."
+            }
+        },
+        "skills__title": "Tecnologías",
+        "projects__title": "Proyectos",
+        "projects": {
+            "ac_computers": {
+                "name": "AC Computers",
+                "description": "Una aplicación web para vender computadoras y componentes. Permite a los usuarios ver el catálogo, buscar productos. También tiene una sección para formularios de contacto."
+            },
+            "express_sale": {
+                "name": "Express Sale",
+                "description": "Una aplicación web para tiendas de barrio. Permite a los usuarios ver el catálogo, buscar productos, hacer pedidos, ver el estado de entrega y ver estadísticas."
+            },
+            "tempus_elite": {
+                "name": "Tempus Elite",
+                "description": "Tempus Elite es un catálogo, en el que puedes encontrar una gran variedad de relojes de lujo de las mejores marcas del mundo. Permite a los usuarios ver el catálogo, buscar relojes."
+            },
+            "la_abejita": {
+                "name": "Uniformes Escolares La Abejita 22",
+                "description": "Uniformes La Abejita es un sitio web para ofrecer uniformes escolares de la mejor calidad. Este proyecto ha sido desarrollado utilizando Laravel, un framework PHP que facilita la creación de aplicaciones web robustas y eficientes."
+            }
+        },
+        "certificates__title": "Certificados",
+        "certificates__view": "Ver certificado",
+        "certificates__all": "Ver todos los certificados",
+        "contact__title": "Contacto",
+        "contact__description": "Si tienes alguna pregunta, sugerencia o simplemente quieres hablar, no dudes en contactarme. Estoy aqui para ayudarte.",
+        "contact__label--email": "Correo electrónico",
+        "contact__label--message": "Mensaje",
+        "contact__label--subject": "Asunto",
+        "contact__placeholder--email": "Escribe tu correo",
+        "contact__placeholder--message": "Escribe tu mensaje",
+        "contact__placeholder--subject": "Escribe el asunto",
+        "contact__submit": "Envia tu mensaje"
     }
 }

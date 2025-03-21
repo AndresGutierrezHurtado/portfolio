@@ -126,7 +126,7 @@ export default function Home() {
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <h1 className="text-5xl font-extrabold tracking-tight text-center mb-12">
-                        Sobre mi 👋
+                        {t("about__title")}
                     </h1>
                     <div className="flex [&>*]:flex-1 gap-10 items-center">
                         <div className="flex flex-col gap-10">
@@ -171,11 +171,11 @@ export default function Home() {
                                                     {ex.company}
                                                 </h3>
                                                 <p className="text-sm font-medium italic">
-                                                    {ex.title}
+                                                    {t(ex.title)}
                                                 </p>
                                             </div>
                                             <p className="leadint-tight text-base font-normal text-secondary/80">
-                                                {ex.description}
+                                                {t(ex.description)}
                                             </p>
                                         </div>
                                     </li>
@@ -189,7 +189,7 @@ export default function Home() {
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <h1 className="text-5xl font-extrabold tracking-tight py-10 text-center">
-                        Tech Stack
+                        {t("skills__title")}
                     </h1>
                     <div className="flex flex-wrap items-center gap-[50px] justify-center">
                         {data.techStack.map((skill, index) => {
@@ -209,7 +209,9 @@ export default function Home() {
             </section>
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
-                    <h1 className="text-5xl font-extrabold tracking-tight py-10">Projects</h1>
+                    <h1 className="text-5xl font-extrabold tracking-tight py-10">
+                        {t("projects__title")}
+                    </h1>
                     <div>
                         {data.projects.map((project, index) => (
                             <div key={index} className="flex gap-10 py-8">
@@ -224,7 +226,7 @@ export default function Home() {
                                 </figure>
                                 <div className="flex-1 flex flex-col">
                                     <h2 className="text-3xl font-extrabold tracking-tight mb-1.5">
-                                        {project.name}
+                                        {t(project.name)}
                                     </h2>
                                     <div className="flex flex-wrap gap-3">
                                         {project.tags.map((tag, index) => (
@@ -236,7 +238,9 @@ export default function Home() {
                                             </p>
                                         ))}
                                     </div>
-                                    <p className="mt-5 grow text-pretty">{project.description}</p>
+                                    <p className="mt-5 grow text-pretty">
+                                        {t(project.description)}
+                                    </p>
                                     <div className="flex gap-5">
                                         {project.link && (
                                             <Link
@@ -268,7 +272,9 @@ export default function Home() {
             <section className="w-full px-3">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
                     <div className="flex flex-col gap-10">
-                        <h1 className="text-5xl font-extrabold tracking-tight">Certificates</h1>
+                        <h1 className="text-5xl font-extrabold tracking-tight">
+                            {t("certificates__title")}
+                        </h1>
 
                         <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-10">
                             {data.certificates.map((certificate, index) => (
@@ -292,10 +298,10 @@ export default function Home() {
                                         <div className="absolute bottom-0 left-0 w-full p-5 flex justify-between z-[1]">
                                             <Link href={certificate.link} target="_blank">
                                                 <p className="text-white tracking-loose text-sm font-medium">
-                                                    View Certificate
+                                                    {t("certificates__view")}
                                                 </p>
                                             </Link>
-                                            <Link href="" target="_blank">
+                                            <Link href={certificate.link} target="_blank">
                                                 <ArrowRight size={20} className="text-white" />
                                             </Link>
                                         </div>
@@ -306,7 +312,9 @@ export default function Home() {
 
                         <div className="w-full flex justify-center">
                             <Link href={data.linkedin + "/details/certifications/"} target="_blank">
-                                <button className="btn btn-primary">View all certificates</button>
+                                <button className="btn btn-primary">
+                                    {t("certificates__all")}
+                                </button>
                             </Link>
                         </div>
                     </div>
@@ -314,49 +322,45 @@ export default function Home() {
             </section>
             <section className="w-full px-3 mb-[100px]">
                 <div className="w-full max-w-[1200px] mx-auto py-10">
-                    <h1 className="text-5xl font-extrabold tracking-tight py-10">Contact</h1>
+                    <div className="flex flex-col gap-2 py-10">
+                        <h1 className="text-5xl font-extrabold tracking-tight">
+                            {t("contact__title")}
+                        </h1>
+                        <p className="text-xl text-pretty">{t("contact__description")}</p>
+                    </div>
 
                     <div className="card bg-white/80 backdrop-blur-[2px] shadow-xl h-fit w-full">
                         <div className="card-body [&_p]:grow-0 px-8 py-10">
                             <form className="space-y-2">
-                                <div className="flex flex-col gap-2">
-                                    <h2 className="text-3xl font-extrabold">
-                                        ¡Queremos escucharte!
-                                    </h2>
-                                    <p className="leading-[1.35]">
-                                        Dejanos tu mensaje y nos pondremos en contacto.
-                                    </p>
-                                </div>
-
                                 <fieldset className="fieldset">
                                     <label className="fieldset-label font-medium text-base">
-                                        Correo electrónico:
+                                        {t("contact__label--email")}:
                                     </label>
                                     <input
                                         className="input w-full focus:outline-0 focus:border-primary bg-transparent"
-                                        placeholder="Ingresa tu correo electrónico"
+                                        placeholder={t("contact__placeholder--email")}
                                         name="user_email"
                                     />
                                 </fieldset>
 
                                 <fieldset className="fieldset">
                                     <label className="fieldset-label font-medium text-base">
-                                        Asunto:
+                                        {t("contact__label--subject")}:
                                     </label>
                                     <input
                                         className="input w-full focus:outline-0 focus:border-primary bg-transparent"
-                                        placeholder="Ingresa tu nombre"
+                                        placeholder={t("contact__placeholder--subject")}
                                         name="email_subject"
                                     />
                                 </fieldset>
 
                                 <fieldset className="fieldset">
                                     <label className="fieldset-label font-medium text-base">
-                                        Mensaje:
+                                        {t("contact__label--message")}:
                                     </label>
                                     <textarea
                                         className="textarea w-full focus:outline-0 focus:border-primary bg-transparent resize-none h-32"
-                                        placeholder="Ingresa tu mensaje"
+                                        placeholder={t("contact__placeholder--message")}
                                         name="email_message"
                                     ></textarea>
                                 </fieldset>
@@ -364,7 +368,7 @@ export default function Home() {
                                 <div className="form-control flex flex-col gap-1 w-full pt-5">
                                     <button className="btn w-full btn-primary">
                                         <PaperPlaneIcon size={20} />
-                                        Enviar mensaje
+                                        <span>{t("contact__submit")}</span>
                                     </button>
                                 </div>
                             </form>

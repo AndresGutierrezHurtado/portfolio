@@ -17,6 +17,52 @@
         "hero__stat--commits": "Commits on GitHub",
         "hero__scroll": "Scroll down",
         "about__title": "About me 👋",
-        "about__description": "<p>I'm <important>Andrés Gutiérrez Hurtado</important>, a passionate software developer striving to continuously improve my skills and become one of the best in the field.</p><p>I worked as a monitor on a <important>SENNOVA project</important>, leading the planning and development of an <important>accessibility tool for WCAG documentation</important>.</p> <p>Additionally, <important>I've led the best projects</important> during my training as a Technician and my current studies as a Technologist, showcasing strong leadership and the ability to execute effective technological solutions.</p>"
+        "about__description": "<p>I'm <important>Andrés Gutiérrez Hurtado</important>, a passionate software developer striving to continuously improve my skills and become one of the best in the field.</p><p>I worked as a monitor on a <important>SENNOVA project</important>, leading the planning and development of an <important>accessibility tool for WCAG documentation</important>.</p> <p>Additionally, <important>I've led the best projects</important> during my training as a Technician and my current studies as a Technologist, showcasing strong leadership and the ability to execute effective technological solutions.</p>",
+        "experience": {
+            "plataforma_av": {
+                "title": "Junior Developer",
+                "description": "I will be doing my technologist internship at Plataforma AV, where I will contribute by developing the required software solutions to support the company's needs."
+            },
+            "ac_computers": {
+                "title": "Software Analist and Developer",
+                "description": "I collaborated with AC Computers to develop their online product catalog, enhancing their web presence and improving customer accessibility. I worked on the design and implementation of a responsive and user-friendly interface, ensuring an intuitive browsing experience."
+            },
+            "sennova": {
+                "title": "Monitor | Software Analist and Developer",
+                "description": "I worked on the Spanish documentation of the WCAG 2.1, creating guides and examples to facilitate its implementation. I developed a web accessibility tool for React projects. I presented this project at conferences and events, highlighting the importance of digital accessibility."
+            }
+        },
+        "skills__title": "Skills",
+        "projects__title": "Projects",
+        "projects": {
+            "ac_computers": {
+                "name": "AC Computers",
+                "description": "A web application for selling computers and components. It allows users to view the catalog, search for products. It also has a section for contact forms."
+            },
+            "express_sale": {
+                "name": "Express Sale",
+                "description": "A web application for neighborhood stores. It allows users to view the catalog, search for products, place orders, check delivery status, and view statistics."
+            },
+            "tempus_elite": {
+                "name": "Tempus Elite",
+                "description": "Tempus Elite is a catalog where you can find a wide variety of luxury watches from the world's best brands. It allows users to view the catalog and search for watches."
+            },
+            "la_abejita": {
+                "name": "Uniformes Escolares La Abejita 22",
+                "description": "Uniformes La Abejita is a website offering top-quality school uniforms. This project has been developed using Laravel, a PHP framework that facilitates the creation of robust and efficient web applications."
+            }
+        },
+        "certificates__title": "Certificates",
+        "certificates__view": "View certificate",
+        "certificates__all": "View all certificates",
+        "contact__title": "Contact",
+        "contact__description": "If you have any questions, suggestions or just want to talk, don't hesitate to contact me. I'm here to help.",
+        "contact__label--email": "Email",
+        "contact__label--message": "Message",
+        "contact__label--subject": "Subject",
+        "contact__placeholder--email": "Write your email",
+        "contact__placeholder--message": "Write your message",
+        "contact__placeholder--subject": "Write the subject",
+        "contact__submit": "Send your message"
     }
 }

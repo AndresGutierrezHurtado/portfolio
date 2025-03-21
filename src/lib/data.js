@@ -11,6 +11,70 @@ export default {
         certificationsCount: 30,
         yearsOfExperience: 1,
     },
+    experiences: [
+        {
+            company: "Plataforma AV",
+            title: "experience.plataforma_av.title",
+            description: "experience.plataforma_av.description",
+            dateStart: new Date("2025-06-15"),
+            dateEnd: new Date("2025-12-15"),
+            tags: ["HTML", "CSS", "JavaScript"],
+        },
+        {
+            company: "AC Computers",
+            title: "experience.ac_computers.title",
+            description: "experience.ac_computers.description",
+            dateStart: new Date("2025-01-15"),
+            dateEnd: new Date("2025-06-15"),
+            tags: ["HTML", "CSS", "JavaScript"],
+        },
+        {
+            company: "SENNOVA",
+            title: "experience.sennova.title",
+            description: "experience.sennova.description",
+            dateStart: new Date("2024-08-15"),
+            dateEnd: new Date("2024-12-15"),
+            tags: ["HTML", "CSS", "JavaScript"],
+        },
+    ],
+    projects: [
+        {
+            name: "projects.ac_computers.name",
+            description: "projects.ac_computers.description",
+            image: "/projects/ac-computers.png",
+            link: "https://ac-computers-react.vercel.app/",
+            github: "https://github.com/AndresGutierrezHurtado/ac-computers-react",
+            tags: ["Next.js", "Three.js", "Tailwind CSS", "Postgres", "Docker", "Sequelize"],
+            medias: [],
+        },
+        {
+            name: "projects.express_sale.name",
+            description: "projects.express_sale.description",
+            image: "/projects/express-sale.png",
+            link: null,
+            github: "https://github.com/AndresGutierrezHurtado/relojeria",
+            tags: ["Laravel", "MySQL", "Tailwind CSS", "Docker", "Sequelize"],
+            medias: [],
+        },
+        {
+            name: "projects.tempus_elite.name",
+            description: "projects.tempus_elite.description",
+            image: "/projects/tempus-elite.png",
+            link: "https://tempus-elite.onrender.com/",
+            github: "https://github.com/AndresGutierrezHurtado/relojeria",
+            tags: ["Next.js", "Three.js", "Tailwind CSS", "Cheerio", "Docker", "Sequelize"],
+            medias: [],
+        },
+        {
+            name: "projects.la_abejita.name",
+            description: "projects.la_abejita.description",
+            image: "/projects/la-abejita.png",
+            link: null,
+            github: "https://github.com/AndresGutierrezHurtado/relojeria",
+            tags: ["Laravel", "MySQL", "Tailwind CSS", "Docker", "Sequelize"],
+            medias: [],
+        },
+    ],
     certificates: [
         {
             institution: "Netzun",
@@ -53,77 +117,6 @@ export default {
             date: new Date("2025-03-01"),
             image: "https://media.licdn.com/dms/image/v2/D4D2DAQH6xigd7zfz9w/profile-treasury-document-images_800/B4DZWiviTqHYAk-/1/1742192127274?e=1743638400&v=beta&t=3LrGAUyWLHAKSrIu-fjB9KvpHXNc-FsUlqChm_aDmo4",
             link: "https://github.com",
-        },
-    ],
-    projects: [
-        {
-            name: "AC Computers",
-            description:
-                "A web application for selling PCs and components. It allows users to view the catalog, search for products. It also has a section for contact form.",
-            image: "/projects/ac-computers.png",
-            link: "https://ac-computers-react.vercel.app/",
-            github: "https://github.com/AndresGutierrezHurtado/ac-computers-react",
-            tags: ["Next.js", "Three.js", "Tailwind CSS", "Postgres", "Docker", "Sequelize"],
-            medias: [],
-        },
-        {
-            name: "Express Sale",
-            description:
-                "A web application for neighborhood stores. It allows users to view the catalog, search for products, place orders, view delivery status and view statistics.",
-            image: "/projects/express-sale.png",
-            link: "https://tempus-elite.onrender.com/",
-            github: "https://github.com/AndresGutierrezHurtado/relojeria",
-            tags: ["Laravel", "MySQL", "Tailwind CSS", "Docker", "Sequelize"],
-            medias: [],
-        },
-        {
-            name: "Tempus Elite",
-            description:
-                "A web application for selling watches. It allows users to view the catalog, search for watches.",
-            image: "/projects/tempus-elite.png",
-            link: "https://tempus-elite.onrender.com/",
-            github: "https://github.com/AndresGutierrezHurtado/relojeria",
-            tags: ["Next.js", "Three.js", "Tailwind CSS", "Cheerio", "Docker", "Sequelize"],
-            medias: [],
-        },
-        {
-            name: "Uniformes Escolares la Abejita 22",
-            description:
-                "A web application for selling watches. It allows users to view the catalog, search for watches.",
-            image: "/projects/la-abejita.png",
-            link: "https://tempus-elite.onrender.com/",
-            github: "https://github.com/AndresGutierrezHurtado/relojeria",
-            tags: ["Laravel", "MySQL", "Tailwind CSS", "Docker", "Sequelize"],
-            medias: [],
-        },
-    ],
-    experiences: [
-        {
-            company: "Plataforma AV",
-            title: "Junior Developer",
-            description:
-                "I will be doing my technologist internship at Plataforma AV, where I will contribute by developing the required software solutions to support the company's needs.",
-            dateStart: new Date("2025-06-15"),
-            dateEnd: new Date("2025-12-15"),
-            tags: ["HTML", "CSS", "JavaScript"],
-        },
-        {
-            company: "AC Computers",
-            title: "Software Analist and Developer",
-            description:
-                "I collaborated with AC Computers to develop their online product catalog, enhancing their web presence and improving customer accessibility. I worked on the design and implementation of a responsive and user-friendly interface, ensuring an intuitive browsing experience.",
-            dateStart: new Date("2025-01-15"),
-            dateEnd: new Date("2025-06-15"),
-            tags: ["HTML", "CSS", "JavaScript"],
-        },
-        {
-            company: "SENNOVA",
-            title: "Monitor | Software Analist and Developer",
-            description:
-                "I worked on the Spanish documentation of the WCAG 2.1, creating guides and examples to facilitate its implementation. I developed a web accessibility tool for React projects. I presented this project at conferences and events, highlighting the importance of digital accessibility.",
-            dateStart: new Date("2024-08-15"),
-            dateEnd: new Date("2024-12-15"),
-            tags: ["HTML", "CSS", "JavaScript"],
         },
     ],
     techStack: [
