@@ -37,6 +37,15 @@ export default async function RootLayout({ children }) {
                     type="image/png"
                     sizes="any"
                 />
+                <meta property="og:title" content="Portfolio de Andrés Gutiérrez Hurtado - Desarrollador y Programador web / mobile" />
+                <meta
+                    property="og:description"
+                    content="Desarrollador de software con experiencia en el desarrollo de sitios web, aplicaciones web y aplicaciones moviles, con conocimientos en las mejores practicas de desarrollo y experiencia en el uso de tecnologias como Next.js, React, Node.js, Laravel, Three.js, entre otras."
+                />
+                <meta property="og:image" content={`${process.env.NEXT_PUBLIC_APP_DOMAIN}/preview.png`} />
+                <meta property="og:url" content="https://andres-portfolio-b4dv.onrender.com/" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
             </head>
             <NextIntlClientProvider locale={locale}>
                 <body
