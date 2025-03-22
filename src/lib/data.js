@@ -14,13 +14,13 @@ const techList = [
     { name: "Figma", icon: "FigmaIcon", background: "bg-red-500/20", color: "text-red-500", border: "border-red-500" },
     { name: "Postman", icon: "PostmanIcon", background: "bg-orange-500/20", color: "text-orange-500", border: "border-orange-500" },
     { name: "JavaScript", icon: "JavaScriptIcon", background: "bg-yellow-500/20", color: "text-yellow-500", border: "border-yellow-500" },
-    { name: "Express.js", icon: "ExpressIcon", background: "bg-orange-500/20", color: "text-orange-500", border: "border-orange-500" },
+    { name: "Express.js", icon: "ExpressIcon", background: "bg-gray-950/20", color: "text-gray-950", border: "border-gray-950" },
     { name: "TailwindCSS", icon: "TailwindCSSIcon", background: "bg-cyan-500/20", color: "text-cyan-500", border: "border-cyan-500" },
     { name: "Bootstrap", icon: "BootstrapIcon", background: "bg-purple-800/20", color: "text-purple-800", border: "border-purple-800" },
     { name: "Docker", icon: "DockerIcon", background: "bg-cyan-500/20", color: "text-cyan-500", border: "border-cyan-500" },
-    { name: "Three.js", icon: "ThreeIcon", background: "bg-orange-500/20", color: "text-orange-500", border: "border-orange-500" },
+    { name: "Three.js", icon: "ThreeIcon", background: "bg-gray-950/20", color: "text-gray-950", border: "border-gray-950" },
     { name: "Cheerio", icon: "CheerioIcon", background: "bg-orange-500/20", color: "text-orange-500", border: "border-orange-500" },
-    { name: "Postgres", icon: "PostgresIcon", background: "bg-green-500/20", color: "text-green-500", border: "border-green-500" },
+    { name: "Postgres", icon: "PostgresIcon", background: "bg-sky-700/20", color: "text-sky-700", border: "border-sky-700" },
 ];
 
 export default {
@@ -86,7 +86,7 @@ export default {
             image: "/projects/tempus-elite.png",
             link: "https://tempus-elite.onrender.com/",
             github: "https://github.com/AndresGutierrezHurtado/relojeria",
-            tags: techList.filter(s => ["Next.js", "Three.js", "Tailwind CSS", "Cheerio", "Docker", "Sequelize"].includes(s.name)),
+            tags: techList.filter(s => ["Next.js", "Three.js", "Tailwind CSS", "Cheerio", "Sequelize"].includes(s.name)),
             medias: [],
         },
         {
@@ -95,7 +95,7 @@ export default {
             image: "/projects/la-abejita.png",
             link: null,
             github: "https://github.com/AndresGutierrezHurtado/relojeria",
-            tags: techList.filter(s => ["Laravel", "MySQL", "Tailwind CSS", "Docker", "Sequelize"].includes(s.name)),
+            tags: techList.filter(s => ["Laravel", "MySQL", "Tailwind CSS", "Sequelize"].includes(s.name)),
             medias: [],
         },
     ],

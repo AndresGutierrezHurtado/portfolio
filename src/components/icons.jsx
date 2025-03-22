@@ -38,6 +38,10 @@ import {
     SiSocketdotio as SocketIcon,
     SiPostman as PostmanIcon,
     SiTailwindcss as TailwindCSSIcon,
+    SiCheerio as CheerioIcon,
+    SiDocker as DockerIcon,
+    SiThreedotjs as ThreeIcon,
+    SiPostgresql as PostgresIcon,
 } from "react-icons/si";
 
 const SpainIcon = (props) => {
@@ -68,6 +72,10 @@ export {
     PostmanIcon,
     TailwindCSSIcon,
     BootstrapIcon,
+    DockerIcon,
+    ThreeIcon,
+    CheerioIcon,
+    PostgresIcon,
 
     //extra
     LanguageIcon,
