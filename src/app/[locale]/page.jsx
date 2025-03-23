@@ -10,13 +10,10 @@ import {
     DownloadIcon,
     ExportIcon,
     GithubIcon,
-    LanguageIcon,
     LinkedinIcon,
     MailIcon,
-    PaperPlaneIcon,
     CodeIcon,
     TechIcon,
-    ContactIcon,
     CertificateIcon,
 } from "@/components/icons";
 import * as Icons from "@/components/icons";
@@ -29,7 +26,7 @@ export default function Home() {
         <>
             <section className="w-full px-3" name="hero">
                 <div className="w-full max-w-[1200px] mx-auto flex flex-col justify-center pb-10">
-                    <div className="flex flex-row items-center justify-evenly lg:justify-between min-h-[70vh] lg:min-h-[auto]">
+                    <div className="flex flex-col sm:flex-row items-center justify-evenly lg:justify-between min-h-[70vh] lg:min-h-[auto] gap-5 md:gap-0">
                         <div className="flex flex-col gap-5 w-full max-w-[530px]">
                             <div className="flex flex-col">
                                 <h3 className="text-base lg:text-xl font-bold text-primary">
@@ -78,7 +75,7 @@ export default function Home() {
                             />
                             <div className="w-[400px] aspect-square bg-primary rounded-full absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1]"></div>
                         </div>
-                        <div className="flex flex-col gap-3 hidd">
+                        <div className="flex flex-row sm:flex-col gap-3">
                             <Link href={data.linkedin} target="_blank">
                                 <button className="btn btn-circle btn-outline btn-secondary">
                                     <LinkedinIcon size={20} />

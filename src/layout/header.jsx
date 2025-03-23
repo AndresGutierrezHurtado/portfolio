@@ -17,9 +17,9 @@ export default function Header() {
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
-                navbarRef.current.classList.add("bg-white/40", "shadow-lg", "px-4", "md:px-8");
+                navbarRef.current.classList.add("bg-white/60", "md:bg-white/50", "shadow-lg", "px-4", "md:px-8");
             } else {
-                navbarRef.current.classList.remove("bg-white/40", "shadow-lg", "px-4", "md:px-8");
+                navbarRef.current.classList.remove("bg-white/60", "md:bg-white/50", "shadow-lg", "px-4", "md:px-8");
             }
         };
 
@@ -34,7 +34,7 @@ export default function Header() {
         <header className="w-full px-3 sticky top-0 z-50">
             <div className="w-full max-w-[1200px] mx-auto py-3">
                 <div
-                    className="navbar rounded-full duration-300 backdrop-blur-[2px] py-1"
+                    className="navbar rounded-full duration-300 backdrop-blur-[6px] md:backdrop-blur-[4px] py-1"
                     ref={navbarRef}
                 >
                     <div className="navbar-start text-xl sm:text-3xl md:text-5xl text-nowrap font-passion-one leading-tight">
