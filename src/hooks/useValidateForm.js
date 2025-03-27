@@ -79,15 +79,12 @@ export const validateForm = (data = {}, form = "", t) => {
     } catch (error) {
         let fieldErrors = [];
 
-        console.log("error", error);
-
         error.issues.forEach((issue) => {
             fieldErrors.push({
                 field: issue.path[0].key,
                 message: issue.message,
             });
 
-            console.log(toast.error(issue.message, { theme: "colored" }));
             toast.error(issue.message, {
                 theme: "colored",
                 position: "bottom-right",
