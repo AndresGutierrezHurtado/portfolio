@@ -18,16 +18,16 @@ export default function ProjectsList({ projects }) {
         <div>
             {projectsList.map((project, index) => (
                 <div key={index} className="flex flex-col md:flex-row gap-10 py-8">
-                    <figure className="h-fit duration-300 bg-secondary flex-1 rounded-lg group overflow-hidden hover:-translate-y-1">
+                    <figure className="w-full md:w-3/7 aspect-[16/10] rounded-lg overflow-hidden hover:-translate-y-1 shadow-lg hover:shadow-xl duration-300">
                         <Image
                             src={process.env.NEXT_PUBLIC_APP_DOMAIN + project.image}
                             width={500}
                             height={500}
                             alt={project.name}
-                            className="w-full h-[285px] object-contain rounded-lg aspect-square shadow-lg shadow-black/50 scale-[1.15] group-hover:scale-[1] duration-300"
+                            className="w-full h-full object-cover hover:scale-110 duration-300"
                         />
                     </figure>
-                    <div className="flex-1 flex flex-col">
+                    <div className="w-full md:w-4/7 flex flex-col">
                         <h2 className="text-3xl font-extrabold tracking-tight mb-1.5">
                             {t(project.name)}
                         </h2>
