@@ -36,6 +36,10 @@
             "sennova": {
                 "title": "Monitor | Software Analist and Developer",
                 "description": "I worked on the Spanish documentation of the WCAG 2.1, creating guides and examples to facilitate its implementation. I developed a web accessibility tool for React projects. I presented this project at conferences and events, highlighting the importance of digital accessibility."
+            },
+            "uniformes_la_abejita": {
+                "title": "Technician en Programación de Software",
+                "description": "I developed a website for selling school uniforms, improving the visibility and accessibility of the company. I implemented an inventory and order management system, optimizing internal processes."
             }
         },
         "skills__title": "Skills",
@@ -43,6 +47,14 @@
         "projects__button--github": "View the repository on GitHub",
         "projects__button--website": "View the website",
         "projects": {
+            "sena_accessiblity": {
+                "name": "Sena Accessibility",
+                "description": "A web accessibility tool for React projects with TailwindCSS v4. It allows users to navigate the web easily and improve their browsing experience."
+            },
+            "eduweb": {
+                "name": "EduWeb",
+                "description": "A web application for managing courses and students. It allows users to view the course catalog, enroll, and track their progress."
+            },
             "ac_computers": {
                 "name": "AC Computers",
                 "description": "A web application for selling computers and components. It allows users to view the catalog, search for products. It also has a section for contact forms."
@@ -54,6 +66,10 @@
             "tempus_elite": {
                 "name": "Tempus Elite",
                 "description": "Tempus Elite is a catalog where you can find a wide variety of luxury watches from the world's best brands. It allows users to view the catalog and search for watches."
+            },
+            "isa_making": {
+                "name": "Isa Making",
+                "description": "Isa Making is a website for selling clothing items. It allows users to view the catalog, purchase, and search for clothing items."
             },
             "la_abejita": {
                 "name": "Uniformes Escolares La Abejita 22",

@@ -36,6 +36,10 @@
             "sennova": {
                 "title": "Monitor | Analista y Desarrollador de Software",
                 "description": "Trabajé en la documentación en español de las WCAG 2.1, creando guías y ejemplos para facilitar su implementación. Desarrollé una herramienta de accesibilidad web para proyectos en React. Presenté este proyecto en conferencias y eventos, destacando la importancia de la accesibilidad digital."
+            },
+            "uniformes_la_abejita": {
+                "title": "Técnico en Programación de Software",
+                "description": "Desarrollé un sitio web para la venta de uniformes escolares, mejorando la visibilidad y accesibilidad de la empresa. Implementé un sistema de gestión de inventario y pedidos, optimizando los procesos internos."
             }
         },
         "skills__title": "Tecnologías",
@@ -43,6 +47,14 @@
         "projects__button--github": "Ver el repositorio en GitHub",
         "projects__button--website": "Ver el sitio web",
         "projects": {
+            "sena_accessiblity": {
+                "name": "Sena Accessibility",
+                "description": "Una herramienta de accesibilidad web para proyectos en React con TailwindCSS v4. Permite a los usuarios navegar por la web con facilidad y mejorar la experiencia de navegación."
+            },
+            "eduweb": {
+                "name": "EduWeb",
+                "description": "Una aplicación web para gestionar cursos y estudiantes. Permite a los usuarios ver el catálogo de cursos, inscribirse y ver su progreso."
+            },
             "ac_computers": {
                 "name": "AC Computers",
                 "description": "Una aplicación web para vender computadoras y componentes. Permite a los usuarios ver el catálogo, buscar productos. También tiene una sección para formularios de contacto."
@@ -54,6 +66,10 @@
             "tempus_elite": {
                 "name": "Tempus Elite",
                 "description": "Tempus Elite es un catálogo, en el que puedes encontrar una gran variedad de relojes de lujo de las mejores marcas del mundo. Permite a los usuarios ver el catálogo, buscar relojes."
+            },
+            "isa_making": {
+                "name": "Isa Making",
+                "description": "Isa Making es un sitio web para la venta de prendas de vestir. Permite a los usuarios ver el catálogo, comprar y buscar prendas de vestir."
             },
             "la_abejita": {
                 "name": "Uniformes Escolares La Abejita 22",
