@@ -15,12 +15,11 @@ export default function Header() {
     const navbarRef = useRef(null);
 
     useEffect(() => {
+        const classes = ["bg-white/60", "md:bg-white/50", "shadow-lg", "px-4", "md:px-8"];
+
         const handleScroll = () => {
-            if (window.scrollY > 0) {
-                navbarRef.current.classList.add("bg-white/60", "md:bg-white/50", "shadow-lg", "px-4", "md:px-8");
-            } else {
-                navbarRef.current.classList.remove("bg-white/60", "md:bg-white/50", "shadow-lg", "px-4", "md:px-8");
-            }
+            if (window.scrollY > 0) navbarRef.current.classList.add(...classes);
+            else navbarRef.current.classList.remove(...classes);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -43,7 +42,7 @@ export default function Header() {
                         </Link>
                     </div>
                     <div className="navbar-center">
-                        <ul className="flex flex-row gap-7 text-lg font-medium hidden lg:flex">
+                        <ul className="flex-row gap-7 text-lg font-medium hidden lg:flex">
                             <li className="duration-300 hover:text-primary hover:font-bold hover:scale-[1.05]">
                                 <Link
                                     activeClass="text-primary font-bold"
@@ -159,15 +158,19 @@ export default function Header() {
                             <UsaIcon className="w-8 h-8" />
                         )}
                         <select
-                            className="select select-ghost focus:outline-0 w-fit"
+                            className="select select-ghost focus:outline-0 focus:bg-transparent w-fit"
                             defaultValue={locale}
                             onChange={(e) => {
                                 router.replace(pathname, { locale: e.target.value });
                                 router.refresh();
                             }}
                         >
-                            <option value="es">ES</option>
-                            <option value="en">EN</option>
+                            <option value="es" className="font-sans">
+                                ES
+                            </option>
+                            <option value="en" className="font-sans">
+                                EN
+                            </option>
                         </select>
                     </div>
                 </div>
