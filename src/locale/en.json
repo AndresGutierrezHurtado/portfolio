@@ -46,6 +46,8 @@
         "projects__title": "Projects",
         "projects__button--github": "View the repository on GitHub",
         "projects__button--website": "View the website",
+        "projects__button--more": "View more",
+        "projects__button--less": "View less",
         "projects": {
             "sena_accessiblity": {
                 "name": "Sena Accessibility",
