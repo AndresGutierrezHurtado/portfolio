@@ -15,13 +15,14 @@ export default function Header() {
     const navbarRef = useRef(null);
 
     useEffect(() => {
-        const classes = ["bg-white/60", "md:bg-white/50", "shadow-lg", "px-4", "md:px-8"];
+        const classes = ["md:bg-base-200/60", "border-base-300/80", "border", "shadow-lg", "px-4", "md:px-8"];
 
         const handleScroll = () => {
             if (window.scrollY > 0) navbarRef.current.classList.add(...classes);
             else navbarRef.current.classList.remove(...classes);
         };
 
+        handleScroll();
         window.addEventListener("scroll", handleScroll);
 
         return () => {
@@ -33,7 +34,7 @@ export default function Header() {
         <header className="w-full px-3 sticky top-0 z-50">
             <div className="w-full max-w-[1200px] mx-auto py-3">
                 <div
-                    className="navbar rounded-full duration-300 backdrop-blur-[6px] md:backdrop-blur-[4px] py-1"
+                    className="navbar rounded-full border border-base-300/0 duration-300 backdrop-blur-lg py-1"
                     ref={navbarRef}
                 >
                     <div className="navbar-start text-xl sm:text-3xl md:text-5xl text-nowrap font-passion-one leading-tight">
