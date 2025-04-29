@@ -13,12 +13,14 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 
-    --color-base-100: #F6F6FF;
-    --color-base-content: #1F2937;
-    --color-primary: #0284C7;
-    --color-primary-content: #F6F6FF;
-    --color-secondary: #1F2937;
-    --color-secondary-content: #F6F6FF;
+    --color-base-100: #f0f9ff;
+    --color-base-200: #e0f2fe;
+    --color-base-300: #bae6fd;
+    --color-base-content: #020617;
+    --color-primary: #0284c7;
+    --color-primary-content: #f6f6ff;
+    --color-secondary: #1f2937;
+    --color-secondary-content: #f6f6ff;
 }
 
 body {
