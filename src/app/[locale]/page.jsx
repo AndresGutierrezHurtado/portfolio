@@ -159,7 +159,7 @@ export default function Home() {
                                 {data.experiences.map((ex, index) => (
                                     <li className="mb-7 ms-4" key={index}>
                                         <div className="absolute w-3 h-3 bg-secondary rounded-full mt-[8px] -start-[6.5px] border border-white"></div>
-                                        <time className="mb-1 text-sm font-normal leading-none text-secondary/80 font-medium">
+                                        <time className="mb-1 text-sm leading-none text-secondary/80 font-medium">
                                             {ex.dateStart.toLocaleString("en-US", {
                                                 month: "long",
                                                 year: "numeric",
