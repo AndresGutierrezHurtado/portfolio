@@ -67,9 +67,9 @@ export default function Home() {
                         </div>
                         <div className="h-full relative items-end hidden lg:flex">
                             <Image
-                                src={process.env.NEXT_PUBLIC_APP_DOMAIN + "/hero-image.png"}
+                                src="/hero-image.png"
                                 width={400}
-                                height={400}
+                                height={560}
                                 style={{ objectFit: "contain", width: 400, height: "auto" }}
                                 alt="Imagen de Andres Gutierrez"
                                 priority
