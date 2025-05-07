@@ -48,7 +48,7 @@ export default function Home() {
                                 <Link href={`mailto:${data.email}`} target="_blank">
                                     <button className="btn btn-primary rounded-lg w-fit shadow-none">
                                         <MailIcon size={20} />
-                                        {t("hero__email")}
+                                        {t("hero__contact")}
                                     </button>
                                 </Link>
                                 <Link href="/documents/CV-ES.pdf" target="_blank">
@@ -77,17 +77,17 @@ export default function Home() {
                             <div className="w-[400px] aspect-square bg-primary rounded-full absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1]"></div>
                         </div>
                         <div className="flex flex-row sm:flex-col gap-3">
-                            <Link href={data.linkedin} target="_blank">
+                            <Link href={data.linkedin} target="_blank" className="tooltip tooltip-left" data-tip={t("hero__linkedin")}>
                                 <button className="btn btn-circle btn-outline btn-secondary">
                                     <LinkedinIcon size={20} />
                                 </button>
                             </Link>
-                            <Link href={data.github} target="_blank">
+                            <Link href={data.github} target="_blank" className="tooltip tooltip-left" data-tip={t("hero__github")}>
                                 <button className="btn btn-circle btn-outline btn-secondary">
                                     <GithubIcon size={20} />
                                 </button>
                             </Link>
-                            <Link href={`mailto:${data.email}`} target="_blank">
+                            <Link href={`mailto:${data.email}`} target="_blank" className="tooltip tooltip-left" data-tip={t("hero__email")}>
                                 <button className="btn btn-circle btn-outline btn-secondary">
                                     <MailIcon size={20} />
                                 </button>
