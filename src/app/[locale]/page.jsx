@@ -19,6 +19,7 @@ import {
 import * as Icons from "@/components/icons";
 import ContactForm from "@/components/contactForm";
 import ProjectsList from "@/components/projectsList";
+import DataCard from "@/components/dataCard";
 
 export default function Home() {
     const t = useTranslations("Index");
@@ -94,32 +95,7 @@ export default function Home() {
                             </Link>
                         </div>
                     </div>
-                    <div className="w-full border-[1.5px] border-secondary p-5 rounded-lg grid-cols-4 text-center bg-white/30 backdrop-blur-[5px] hidden lg:grid">
-                        <div className="">
-                            <h1 className="text-5xl font-extrabold tracking-tight">
-                                {data.stats.yearsOfExperience}
-                            </h1>
-                            <p>{t("hero__stat--years")}</p>
-                        </div>
-                        <div className="">
-                            <h1 className="text-5xl font-extrabold tracking-tight">
-                                +{data.stats.certificationsCount}
-                            </h1>
-                            <p>{t("hero__stat--certifications")}</p>
-                        </div>
-                        <div className="">
-                            <h1 className="text-5xl font-extrabold tracking-tight">
-                                +{data.stats.websitesBuilt}
-                            </h1>
-                            <p>{t("hero__stat--projects")}</p>
-                        </div>
-                        <div className="">
-                            <h1 className="text-5xl font-extrabold tracking-tight">
-                                +{data.stats.commitsCount.toLocaleString()}
-                            </h1>
-                            <p>{t("hero__stat--commits")}</p>
-                        </div>
-                    </div>
+                    <DataCard />                                
                 </div>
             </section>
 
