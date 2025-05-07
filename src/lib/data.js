@@ -162,7 +162,7 @@ export default {
     github: "https://github.com/AndresGutierrezHurtado",
     linkedin: "https://www.linkedin.com/in/andr%C3%A9s-guti%C3%A9rrez-hurtado-25946728b",
     stats: {
-        commitsCount: 1700,
+        commitsCount: 2100,
         websitesBuilt: 15,
         certificationsCount: 30,
         yearsOfExperience: 1,
