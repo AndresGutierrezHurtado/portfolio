@@ -8,6 +8,16 @@ This is my personal web portfolio where I showcase the projects I have developed
 
 ---
 
+## 📚 Table of Contents
+
+-   [🚀 Main Features](#-main-features)
+-   [🛠️ Technologies Used](#️-technologies-used)
+-   [📁 Folder Structure](#-folder-structure)
+-   [💾 Installation](#-installation)
+-   [📬 Contact](#-contact)
+
+---
+
 ## 🚀 Main Features
 
 ### Technologies
