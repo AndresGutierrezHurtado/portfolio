@@ -44,3 +44,29 @@ Form with real-time validation, email sending, and status notifications.
 
 Includes a modern and responsive design adapted for desktop, tablet, and mobile; intuitive navigation with smooth scrolling and animations; SEO optimization; multilingual support (Spanish and English) with dynamic language switching; and a visual notification system for confirmations and errors.
 
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+-   **Next.js 15** - React framework with App Router
+-   **React 19** - User interface library
+-   **Tailwind CSS 4** - Utility-first CSS framework
+-   **DaisyUI** - UI components for Tailwind CSS
+
+### Internationalization
+
+-   **next-intl** - Full-featured internationalization management
+-   **Custom Middleware** - Multi-language route configuration
+
+### Additional Libraries
+
+-   **React Icons** - Modern iconography
+-   **React Scroll** - Smooth navigation between sections
+-   **React CountUp** - Counter animations
+-   **React Toastify** - Elegant notifications
+-   **SweetAlert2** - Custom modals and alerts
+-   **Valibot** - Form validation
+-   **Resend** - Email sending service
+
