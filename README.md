@@ -70,3 +70,40 @@ Includes a modern and responsive design adapted for desktop, tablet, and mobile;
 -   **Valibot** - Form validation
 -   **Resend** - Email sending service
 
+---
+
+## 📁 Folder structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── [locale]/           # Dynamic language routes
+│   │   ├── page.jsx        # Main page
+│   │   └── layout.jsx      # Language-specific layout
+│   ├── api/                # API endpoints
+│   │   └── contact/        # Contact form API
+│   ├── globals.css         # Global styles
+│   └── layout.jsx          # Main layout
+├── components/             # Reusable components
+│   ├── contactForm.jsx     # Contact form
+│   ├── dataCard.jsx        # Data cards
+│   ├── icons.jsx           # Icon components
+│   └── projectsList.jsx    # Projects list
+├── hooks/                  # Custom React hooks
+│   └── useScroll.js        # Smooth scroll hook
+├── i18n/                   # Internationalization configuration
+│   ├── navigation.ts       # Navigation configuration
+│   ├── request.ts          # Request configuration
+│   └── routing.ts          # Route configuration
+├── layout/                 # Layout components
+│   ├── Header.jsx          # Navigation component
+│   └── Footer.jsx          # Footer component
+├── lib/                    # Utilities and configurations
+│   ├── utils.js            # Utility functions
+│   └── constants.js        # Project constants
+├── locale/                 # Translation files
+│   ├── en.json             # English translations
+│   └── es.json             # Spanish translations
+└── middleware.ts           # i18n middleware
+```
+
