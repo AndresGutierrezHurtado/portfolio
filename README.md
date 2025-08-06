@@ -107,3 +107,62 @@ src/
 └── middleware.ts           # i18n middleware
 ```
 
+---
+
+## 💾 Installation
+
+### Prerequisites
+
+-   **Node.js** (version 18 or higher)
+-   **npm** or **yarn**
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AndresGutierrezHurtado/portfolio.git
+cd portfolio
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Copy the `.env.example` file to `.env` and configure your environment variables:
+
+```bash
+cp .env.example .env
+```
+
+Then edit the `.env` file with your actual values:
+
+```env
+# Resend configuration for contact form
+RESEND_API_KEY=your_resend_api_key
+```
+
+### 4. Run in Development
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:3000`
+
+### 5. Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+### Available Scripts
+
+-   `npm run dev` - Starts development server with Turbopack
+-   `npm run build` - Builds the application for production
+-   `npm run start` - Starts the production server
+-   `npm run lint` - Runs the linter to check the code
+
