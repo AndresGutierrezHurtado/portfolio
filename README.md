@@ -166,3 +166,14 @@ npm start
 -   `npm run start` - Starts the production server
 -   `npm run lint` - Runs the linter to check the code
 
+---
+
+## 📬 Contact
+
+For questions, support, or collaboration, please contact:
+
+-   **Andrés Gutiérrez Hurtado**
+-   **Email:** [andres52885241@gmail.com](mailto:andres52885241@gmail.com)
+-   **LinkedIn:** [Andrés Gutiérrez](https://www.linkedin.com/in/andr%C3%A9s-guti%C3%A9rrez-hurtado-25946728b/)
+-   **GitHub:** [@AndresGutierrezHurtado](https://github.com/AndresGutierrezHurtado)
+-   **Portfolio:** [Portfolio link](https://andres-portfolio-b4dv.onrender.com)
