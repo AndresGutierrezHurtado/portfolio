@@ -71,31 +71,50 @@ export default function Home() {
                                 src="/hero-image.png"
                                 width={400}
                                 height={560}
-                                style={{ objectFit: "contain", width: 400, height: "auto" }}
+                                style={{
+                                    objectFit: "contain",
+                                    width: 400,
+                                    height: "auto",
+                                }}
                                 alt="Imagen de Andres Gutierrez"
                                 priority
                             />
                             <div className="w-[400px] aspect-square bg-primary rounded-full absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1]"></div>
                         </div>
                         <div className="flex flex-row sm:flex-col gap-3">
-                            <Link href={data.linkedin} target="_blank" className="tooltip tooltip-left" data-tip={t("hero__linkedin")}>
+                            <Link
+                                href={data.linkedin}
+                                target="_blank"
+                                className="tooltip tooltip-left"
+                                data-tip={t("hero__linkedin")}
+                            >
                                 <button className="btn btn-circle btn-outline btn-secondary">
                                     <LinkedinIcon size={20} />
                                 </button>
                             </Link>
-                            <Link href={data.github} target="_blank" className="tooltip tooltip-left" data-tip={t("hero__github")}>
+                            <Link
+                                href={data.github}
+                                target="_blank"
+                                className="tooltip tooltip-left"
+                                data-tip={t("hero__github")}
+                            >
                                 <button className="btn btn-circle btn-outline btn-secondary">
                                     <GithubIcon size={20} />
                                 </button>
                             </Link>
-                            <Link href={`mailto:${data.email}`} target="_blank" className="tooltip tooltip-left" data-tip={t("hero__email")}>
+                            <Link
+                                href={`mailto:${data.email}`}
+                                target="_blank"
+                                className="tooltip tooltip-left"
+                                data-tip={t("hero__email")}
+                            >
                                 <button className="btn btn-circle btn-outline btn-secondary">
                                     <MailIcon size={20} />
                                 </button>
                             </Link>
                         </div>
                     </div>
-                    <DataCard />                                
+                    <DataCard />
                 </div>
             </section>
 

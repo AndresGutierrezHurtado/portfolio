@@ -10,11 +10,11 @@ Este es mi portafolio web personal donde muestro los proyectos que he desarrolla
 
 ## 📚 Tabla de Contenidos
 
--   [🚀 Características Principales](#-características-principales)
--   [🛠️ Tecnologías Utilizadas](#️-tecnologías-utilizadas)
--   [📁 Estructura de Carpetas](#-estructura-de-carpetas)
--   [💾 Instalación](#-instalación)
--   [📬 Contacto](#-contacto)
+- [🚀 Características Principales](#-características-principales)
+- [🛠️ Tecnologías Utilizadas](#️-tecnologías-utilizadas)
+- [📁 Estructura de Carpetas](#-estructura-de-carpetas)
+- [💾 Instalación](#-instalación)
+- [📬 Contacto](#-contacto)
 
 ---
 
@@ -60,25 +60,25 @@ Incluye un diseño moderno y responsivo adaptado para desktop, tablet y móvil; 
 
 ### Frontend
 
--   **Next.js 15** - Framework de React con App Router
--   **React 19** - Biblioteca de interfaz de usuario
--   **Tailwind CSS 4** - Framework de CSS utility-first
--   **DaisyUI** - Componentes de UI para Tailwind CSS
+- **Next.js 15** - Framework de React con App Router
+- **React 19** - Biblioteca de interfaz de usuario
+- **Tailwind CSS 4** - Framework de CSS utility-first
+- **DaisyUI** - Componentes de UI para Tailwind CSS
 
 ### Internacionalización
 
--   **next-intl** - Manejo completo de internacionalización
--   **Middleware personalizado** - Configuración de rutas multiidioma
+- **next-intl** - Manejo completo de internacionalización
+- **Middleware personalizado** - Configuración de rutas multiidioma
 
 ### Librerías Adicionales
 
--   **React Icons** - Iconografía moderna
--   **React Scroll** - Navegación suave entre secciones
--   **React CountUp** - Animaciones de contadores
--   **React Toastify** - Notificaciones elegantes
--   **SweetAlert2** - Modales y alertas personalizadas
--   **Valibot** - Validación de formularios
--   **Resend** - Servicio de envío de emails
+- **React Icons** - Iconografía moderna
+- **React Scroll** - Navegación suave entre secciones
+- **React CountUp** - Animaciones de contadores
+- **React Toastify** - Notificaciones elegantes
+- **SweetAlert2** - Modales y alertas personalizadas
+- **Valibot** - Validación de formularios
+- **Resend** - Servicio de envío de emails
 
 ---
 
@@ -123,8 +123,8 @@ src/
 
 ### Prerrequisitos
 
--   **Node.js** (versión 18 o superior)
--   **npm** o **yarn**
+- **Node.js** (versión 18 o superior)
+- **npm** o **yarn**
 
 ### 1. Clonar el Repositorio
 
@@ -165,10 +165,10 @@ npm start
 
 ### Scripts Disponibles
 
--   `npm run dev` - Inicia el servidor de desarrollo con Turbopack
--   `npm run build` - Construye la aplicación para producción
--   `npm run start` - Inicia el servidor de producción
--   `npm run lint` - Ejecuta el linter para verificar el código
+- `npm run dev` - Inicia el servidor de desarrollo con Turbopack
+- `npm run build` - Construye la aplicación para producción
+- `npm run start` - Inicia el servidor de producción
+- `npm run lint` - Ejecuta el linter para verificar el código
 
 ---
 
@@ -176,8 +176,8 @@ npm start
 
 Para preguntas, soporte o colaboración, por favor contacta:
 
--   **Andrés Gutiérrez Hurtado**
--   **Correo Electrónico:** [andres52885241@gmail.com](mailto:andres52885241@gmail.com)
--   **LinkedIn:** [Andrés Gutiérrez](https://www.linkedin.com/in/andr%C3%A9s-guti%C3%A9rrez-hurtado-25946728b/)
--   **GitHub:** [@AndresGutierrezHurtado](https://github.com/AndresGutierrezHurtado)
--   **Portafolio:** [Link portafolio](https://andres-portfolio-b4dv.onrender.com)
+- **Andrés Gutiérrez Hurtado**
+- **Correo Electrónico:** [andres52885241@gmail.com](mailto:andres52885241@gmail.com)
+- **LinkedIn:** [Andrés Gutiérrez](https://www.linkedin.com/in/andr%C3%A9s-guti%C3%A9rrez-hurtado-25946728b/)
+- **GitHub:** [@AndresGutierrezHurtado](https://github.com/AndresGutierrezHurtado)
+- **Portafolio:** [Link portafolio](https://andres-portfolio-b4dv.onrender.com)

@@ -15,7 +15,11 @@ export async function POST(request) {
             html: feedbackTemplate(data.user_email, data.email_subject, data.email_message),
         });
 
-        return NextResponse.json({ success: true, message: "Email sent successfully", data });
+        return NextResponse.json({
+            success: true,
+            message: "Email sent successfully",
+            data,
+        });
     } catch (error) {
         return NextResponse.json(
             { success: false, message: error.message, data: error },

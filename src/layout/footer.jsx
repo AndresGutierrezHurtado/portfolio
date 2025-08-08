@@ -30,12 +30,16 @@ export default function Footer() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <span className=" hover:underline">{t("footer__link--contact")}</span>
+                                    <span className=" hover:underline">
+                                        {t("footer__link--contact")}
+                                    </span>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/#about">
-                                    <span className=" hover:underline">{t("footer__link--about")}</span>
+                                    <span className=" hover:underline">
+                                        {t("footer__link--about")}
+                                    </span>
                                 </Link>
                             </li>
                         </ul>

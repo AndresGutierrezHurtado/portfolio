@@ -15,7 +15,6 @@ import {
 } from "valibot";
 
 export const validateForm = (data = {}, form = "", t) => {
-
     try {
         let schema;
 
@@ -40,7 +39,11 @@ export const validateForm = (data = {}, form = "", t) => {
                 });
                 break;
             default:
-                return { success: false, message: "Formulario no encontrado", data: null };
+                return {
+                    success: false,
+                    message: "Formulario no encontrado",
+                    data: null,
+                };
                 break;
         }
 
@@ -107,6 +110,10 @@ export const validateForm = (data = {}, form = "", t) => {
             });
         });
 
-        return { success: false, message: "Formulario no valido", errors: fieldErrors };
+        return {
+            success: false,
+            message: "Formulario no valido",
+            errors: fieldErrors,
+        };
     }
 };

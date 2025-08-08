@@ -21,7 +21,7 @@ export default function ContactForm() {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    Accept: "application/json",
+                    "Accept": "application/json",
                 },
                 body: JSON.stringify(data),
             });
@@ -31,7 +31,9 @@ export default function ContactForm() {
                 Swal.fire({
                     icon: "success",
                     title: t("contact__success--title"),
-                    text: t("contact__success--text", { email: data.user_email }),
+                    text: t("contact__success--text", {
+                        email: data.user_email,
+                    }),
                     confirmButtonText: t("contact__success--button"),
                 });
                 e.target.reset();
@@ -39,7 +41,9 @@ export default function ContactForm() {
                 Swal.fire({
                     icon: "error",
                     title: t("contact__error--title"),
-                    text: t("contact__error--text", { error: response.message }),
+                    text: t("contact__error--text", {
+                        error: response.message,
+                    }),
                 });
             }
         }

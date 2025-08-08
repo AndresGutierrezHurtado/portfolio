@@ -23,7 +23,8 @@ export default function DataCard() {
             </div>
             <div className="">
                 <h1 className="text-5xl font-extrabold tracking-tight">
-                    +{isLoaded ? <CountUp end={data.stats.certificationsCount} duration={2.7} /> : 0}
+                    +
+                    {isLoaded ? <CountUp end={data.stats.certificationsCount} duration={2.7} /> : 0}
                 </h1>
                 <p>{t("hero__stat--certifications")}</p>
             </div>

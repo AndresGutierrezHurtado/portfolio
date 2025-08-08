@@ -10,11 +10,11 @@ This is my personal web portfolio where I showcase the projects I have developed
 
 ## 📚 Table of Contents
 
--   [🚀 Main Features](#-main-features)
--   [🛠️ Technologies Used](#️-technologies-used)
--   [📁 Folder Structure](#-folder-structure)
--   [💾 Installation](#-installation)
--   [📬 Contact](#-contact)
+- [🚀 Main Features](#-main-features)
+- [🛠️ Technologies Used](#️-technologies-used)
+- [📁 Folder Structure](#-folder-structure)
+- [💾 Installation](#-installation)
+- [📬 Contact](#-contact)
 
 ---
 
@@ -60,25 +60,25 @@ Includes a modern and responsive design adapted for desktop, tablet, and mobile;
 
 ### Frontend
 
--   **Next.js 15** - React framework with App Router
--   **React 19** - User interface library
--   **Tailwind CSS 4** - Utility-first CSS framework
--   **DaisyUI** - UI components for Tailwind CSS
+- **Next.js 15** - React framework with App Router
+- **React 19** - User interface library
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **DaisyUI** - UI components for Tailwind CSS
 
 ### Internationalization
 
--   **next-intl** - Full-featured internationalization management
--   **Custom Middleware** - Multi-language route configuration
+- **next-intl** - Full-featured internationalization management
+- **Custom Middleware** - Multi-language route configuration
 
 ### Additional Libraries
 
--   **React Icons** - Modern iconography
--   **React Scroll** - Smooth navigation between sections
--   **React CountUp** - Counter animations
--   **React Toastify** - Elegant notifications
--   **SweetAlert2** - Custom modals and alerts
--   **Valibot** - Form validation
--   **Resend** - Email sending service
+- **React Icons** - Modern iconography
+- **React Scroll** - Smooth navigation between sections
+- **React CountUp** - Counter animations
+- **React Toastify** - Elegant notifications
+- **SweetAlert2** - Custom modals and alerts
+- **Valibot** - Form validation
+- **Resend** - Email sending service
 
 ---
 
@@ -123,8 +123,8 @@ src/
 
 ### Prerequisites
 
--   **Node.js** (version 18 or higher)
--   **npm** or **yarn**
+- **Node.js** (version 18 or higher)
+- **npm** or **yarn**
 
 ### 1. Clone the Repository
 
@@ -171,10 +171,10 @@ npm start
 
 ### Available Scripts
 
--   `npm run dev` - Starts development server with Turbopack
--   `npm run build` - Builds the application for production
--   `npm run start` - Starts the production server
--   `npm run lint` - Runs the linter to check the code
+- `npm run dev` - Starts development server with Turbopack
+- `npm run build` - Builds the application for production
+- `npm run start` - Starts the production server
+- `npm run lint` - Runs the linter to check the code
 
 ---
 
@@ -182,8 +182,8 @@ npm start
 
 For questions, support, or collaboration, please contact:
 
--   **Andrés Gutiérrez Hurtado**
--   **Email:** [andres52885241@gmail.com](mailto:andres52885241@gmail.com)
--   **LinkedIn:** [Andrés Gutiérrez](https://www.linkedin.com/in/andr%C3%A9s-guti%C3%A9rrez-hurtado-25946728b/)
--   **GitHub:** [@AndresGutierrezHurtado](https://github.com/AndresGutierrezHurtado)
--   **Portfolio:** [Portfolio link](https://andres-portfolio-b4dv.onrender.com)
+- **Andrés Gutiérrez Hurtado**
+- **Email:** [andres52885241@gmail.com](mailto:andres52885241@gmail.com)
+- **LinkedIn:** [Andrés Gutiérrez](https://www.linkedin.com/in/andr%C3%A9s-guti%C3%A9rrez-hurtado-25946728b/)
+- **GitHub:** [@AndresGutierrezHurtado](https://github.com/AndresGutierrezHurtado)
+- **Portfolio:** [Portfolio link](https://andres-portfolio-b4dv.onrender.com)

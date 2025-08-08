@@ -15,7 +15,14 @@ export default function Header() {
     const navbarRef = useRef(null);
 
     useEffect(() => {
-        const classes = ["md:bg-base-200/60", "border-base-300/80", "border", "shadow-lg", "px-4", "md:px-8"];
+        const classes = [
+            "md:bg-base-200/60",
+            "border-base-300/80",
+            "border",
+            "shadow-lg",
+            "px-4",
+            "md:px-8",
+        ];
 
         const handleScroll = () => {
             if (window.scrollY > 0) navbarRef.current.classList.add(...classes);
@@ -162,7 +169,9 @@ export default function Header() {
                             className="select select-ghost focus:outline-0 focus:bg-transparent w-fit"
                             defaultValue={locale}
                             onChange={(e) => {
-                                router.replace(pathname, { locale: e.target.value });
+                                router.replace(pathname, {
+                                    locale: e.target.value,
+                                });
                                 router.refresh();
                             }}
                         >
