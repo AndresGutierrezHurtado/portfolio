@@ -52,16 +52,10 @@ export default function Home() {
                                         {t("hero__contact")}
                                     </button>
                                 </Link>
-                                <Link href="/documents/CV-ES.pdf" target="_blank">
-                                    <button className="btn btn-secondary btn-outline rounded-lg w-fit shadow-none">
+                                <Link href={t("hero__cv--link")} target="_blank">
+                                    <button className="btn btn-secondary btn-outline rounded-lg w-fit shadow-none tooltip tooltip-bottom" data-tip={t("hero__cv--tooltip")}>
                                         <DownloadIcon size={20} />
-                                        CV - ES
-                                    </button>
-                                </Link>
-                                <Link href="/documents/CV-EN.pdf" target="_blank">
-                                    <button className="btn btn-secondary btn-outline rounded-lg w-fit shadow-none">
-                                        <DownloadIcon size={20} />
-                                        CV - EN
+                                        {t("hero__cv")}
                                     </button>
                                 </Link>
                             </div>
